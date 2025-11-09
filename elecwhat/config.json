@@ -1,0 +1,24 @@
+{
+  "notification-prefix": "WhatsApp - ",
+
+  "quit-on-close": false,
+  "show-at-startup": true,
+
+  "dbus": true,
+
+  "menu-bar": true,
+  "menu-bar-auto-hide": true,
+
+  "keys": {
+    "C ArrowDown": {
+      "whatsappAction": "GO_TO_NEXT_CHAT"
+    }
+  },
+
+  "css": [
+    "span { font-size: 14px !important; font-weight: 400 !important; font-family: Google Sans !important; }",
+    "file://~/mysheet.css"
+  ],
+
+  "spellcheck": false
+}
