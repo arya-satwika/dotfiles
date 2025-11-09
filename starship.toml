@@ -1,0 +1,70 @@
+add_newline = true
+command_timeout = 200
+format = """
+[░▒▓](#303340)\
+[ \ue712 ](bg:#303340 fg:#5BE2C6)\
+[](bg:#767C9D fg:#303340)\
+$directory\
+[](fg:#767C9D bg:#1C2434)\
+$git_branch\
+$git_status\
+[](fg:#1C2434 bg:#1B1E28)\
+\n$character"""
+
+[character]
+error_symbol = "[✗](bold cyan)"
+success_symbol = "[❯](bold cyan)"
+
+
+[directory]
+style = "fg:#E0EDF9 bg:#767C9D"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+[git_branch]
+symbol = ""
+style = "bg:#1C2434"
+format = '[[ $symbol $branch ](fg:#FFFAC2 bg:#1C2434)]($style)'
+
+
+[git_status]
+format = '[[($all_status$ahead_behind )](fg:#FFFAC2 bg:#1C2434)]($style)'
+style = "bg:#1C2434"
+ahead      = "⇡${count} "
+diverged   = "⇕⇡${ahead_count}⇣${behind_count} "
+behind     = "⇣${count} "
+conflicted = " "
+up_to_date = " "
+untracked  = "? "
+modified   = " "
+stashed    = ""
+staged     = ""
+renamed    = ""
+deleted    = ""
+
+[nodejs]
+symbol = ""
+style = "bg:#1B212E"
+format = '[[ $symbol ($version) ](fg:#ffffff bg:#1B212E)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:#1B212E"
+format = '[[ $symbol ($version) ](fg:#ffffff bg:#1B212E)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:#1B212E"
+format = '[[ $symbol ($version) ](fg:#ffffff bg:#1B212E)]($style)'
+
+[php]
+symbol = ""
+style = "bg:#1B212E"
+format = '[[ $symbol ($version) ](fg:#ffffff bg:#1B212E)]($style)'
