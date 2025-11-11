@@ -21,7 +21,7 @@ window#waybar {
   margin: 0px 4px;
   font-size: 12px;
   padding: 0px 12px 3px 15px;
-  border-radius:0px 0px 15px 15px;
+  border-radius:0px 0px 10px 10px;
   margin-left: 8px;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
@@ -29,19 +29,19 @@ window#waybar {
 .modules-center{
   background-color: @background;
   padding: 0px 15px 3px 15px;
-  border-radius:0px 0px 15px 15px;
+  border-radius:0px 0px 10px 10px;
 }
 
 .modules-right {
   background-color: @background;
   margin-right: 8px;
   padding: 0px 15px 3px 15px;
-  border-radius:0px 0px 15px 15px;
+  border-radius:0px 0px 10px 10px;
 }
 
 
 #workspaces button {
-  color: @teal;
+  color: @paleBlue;
   margin: 0 1.5px;
   min-width: 9px;
 }
@@ -51,14 +51,14 @@ window#waybar {
 }
 
 #workspaces button.active{
-  color: @yellow;
+  color: @teal;
   border-top: 2px solid;
 }
 
 
 
 #custom-omarchy{
-  color: @pink;
+  color: @yellow;
   margin-right:15px;
 }
 
