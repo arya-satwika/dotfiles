@@ -1,0 +1,44 @@
+/* #urlbar-background{
+	border-radius: 10px !important;
+	background-color: transparent !important;    
+}
+ */
+/* #zen-appcontent-navbar-container{
+	height: 38px !important;
+	font-size: 3px !important;
+} */
+/* URLBar Background Blur */
+#browser:has(#urlbar[open][zen-floating-urlbar="true"]) .browserContainer {
+      pointer-events: none;
+      filter: blur(10px) brightness(70%) saturate(50%) opacity(70%) !important;
+      scale: 1.05 !important; /* Zoom effect, remove the // to enable */
+	    transition: all 0.4s ease-out !important;
+}
+/*  change browser font*/
+* {
+    font-family: Okta Neue;
+    font-weight: 400;
+    font-size: 14px;
+    font-kerning: none;
+}
+/*  change tabs font */
+.tab-text{
+    font-family: Space Mono;
+    font-weight: 400;
+    font-size: 15px;
+}
+/*  make tab icon bigger*/
+/* #zen-browser-tabs-wrapper .tab-icon-image{
+height: 17px !important;
+width: 17px !important;
+}
+/*  make essentials icon smaller*/
+#zen-essentials-container .tab-icon-image{
+height: 16px !important;
+width: 16px !important;
+} */
+
+/*remove green dots*/
+:root{
+    --attention-dot-color: rgba(0,0,0,0) !important;
+}
