@@ -1,0 +1,9 @@
+[11:25:19 2025-12-25] FETCHING Version 2.42.7
+[11:25:19 2025-12-25] DOWNLOADING https://github.com/spicetify/cli/releases/download/v2.42.7/spicetify-2.42.7-linux-amd64.tar.gz
+[11:25:20 2025-12-25] EXTRACTING /home/aryas/.spicetify/spicetify.tar.gz
+[11:25:20 2025-12-25] SETTING EXECUTABLE PERMISSIONS TO /home/aryas/.spicetify/spicetify
+[11:25:20 2025-12-25] REMOVING /home/aryas/.spicetify/spicetify.tar.gz
+[11:25:20 2025-12-25] spicetify path already set in /home/aryas/.bashrc, continuing...
+[11:25:20 2025-12-25] spicetify path already set in /home/aryas/.bash_profile, continuing...
+[11:25:20 2025-12-25] spicetify v2.42.7 was installed successfully to /home/aryas/.spicetify
+[11:25:20 2025-12-25] Run 'spicetify --help' to get started
