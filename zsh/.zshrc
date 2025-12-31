@@ -120,4 +120,5 @@ fastfetch
 alias zshconfig="code ~/.zshrc"
 alias ohmyzsh="code ~/.oh-my-zsh"
 alias lg="lazygit"
+alias cls="clear"
 eval "$(starship init zsh)"
