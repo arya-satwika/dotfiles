@@ -1,0 +1,13 @@
+{
+  "displayMirror": {
+    "enabled": true
+  },
+  "gitmojiLauncher": {
+    "enabled": true
+  },
+  "calculator": {
+    "enabled": true,
+    "trigger": "=",
+    "noTrigger": true
+  }
+}
