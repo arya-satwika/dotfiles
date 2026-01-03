@@ -13,8 +13,8 @@
   "showSeconds": false,
   "useFahrenheit": false,
   "nightModeEnabled": false,
-  "animationSpeed": 3,
-  "customAnimationDuration": 500,
+  "animationSpeed": 4,
+  "customAnimationDuration": 350,
   "wallpaperFillMode": "Fill",
   "blurredWallpaperLayer": false,
   "blurWallpaperOnOverview": false,
@@ -65,41 +65,41 @@
       "width": 50
     },
     {
-      "id": "bluetooth",
-      "enabled": true,
-      "width": 50
-    },
-    {
-      "id": "audioOutput",
+      "id": "plugin_displayMirror",
       "enabled": true,
       "width": 50
     },
     {
       "id": "audioInput",
       "enabled": true,
-      "width": 50
+      "width": 75
     },
     {
       "id": "nightMode",
       "enabled": true,
-      "width": 50
+      "width": 25
     },
     {
       "id": "darkMode",
       "enabled": true,
-      "width": 50
+      "width": 25
     },
     {
       "id": "diskUsage",
       "enabled": true,
-      "width": 50,
+      "width": 75,
       "instanceId": "mju6doiramtref9l4xh",
       "mountPath": "/"
     },
     {
       "id": "colorPicker",
       "enabled": true,
-      "width": 50
+      "width": 25
+    },
+    {
+      "id": "audioOutput",
+      "enabled": true,
+      "width": 25
     },
     {
       "id": "wifi",
@@ -201,8 +201,8 @@
   "dockBorderColor": "surfaceText",
   "dockBorderOpacity": 1,
   "dockBorderThickness": 1,
-  "notificationOverlayEnabled": false,
-  "modalDarkenBackground": true,
+  "notificationOverlayEnabled": true,
+  "modalDarkenBackground": false,
   "lockScreenShowPowerActions": true,
   "enableFprint": false,
   "maxFprintTries": 15,
