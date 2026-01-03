@@ -9,5 +9,14 @@
     "enabled": true,
     "trigger": "=",
     "noTrigger": true
+  },
+  "displaySettings": {
+    "enabled": true
+  },
+  "displayManager": {
+    "enabled": true
+  },
+  "mediaPlayer": {
+    "enabled": true
   }
 }

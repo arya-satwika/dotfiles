@@ -84,6 +84,7 @@ plugins=(
     zsh-autosuggestions
     zsh-syntax-highlighting
     zsh-autocomplete
+    zoxide
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -121,4 +122,6 @@ alias zshconfig="code ~/.zshrc"
 alias ohmyzsh="code ~/.oh-my-zsh"
 alias lg="lazygit"
 alias cls="clear"
+alias cfg="cd ~/.config"
+alias dotfiles="cd ~/dotfiles"
 eval "$(starship init zsh)"
