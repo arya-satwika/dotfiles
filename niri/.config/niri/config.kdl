@@ -48,6 +48,7 @@ gestures {
 // Find the full list of options on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Input
 input {
+    focus-follows-mouse max-scroll-amount="70%"
     disable-power-key-handling
     keyboard {
         xkb {
@@ -123,8 +124,8 @@ layout {
         color "#0007"
     }
     struts {
-        top 5
-        bottom 5
+        top 4
+        bottom 4
     }
 }
 layer-rule {
@@ -142,6 +143,8 @@ overview {
 // See the binds section below for more spawn examples.
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
+spawn-sh-at-startup "vicinae server"
+
 spawn-at-startup "dbus-update-activation-environment" "--systemd" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"
 spawn-at-startup "dbus-update-activation-environment" "--systemd" "XDG_MENU_PREFIX=arch-"
 environment {
@@ -149,7 +152,7 @@ environment {
    QT_QPA_PLATFORM "wayland"
    QT_QPA_PLATFORMTHEME "qt6ct"
    QT_NO_SYNTHESIZED_BOLD "1"
-  
+   ELECTRON_OZONE_PLATFORM_HINT "auto"
 }
 hotkey-overlay {
     skip-at-startup
@@ -225,16 +228,28 @@ window-rule {
     match app-id=r#"^galculator$"#
     match app-id=r#"^blueman-manager$"#
     match app-id=r#"^org\.gnome\.Nautilus$"#
-    match app-id=r#"^steam$"#
     match app-id=r#"^xdg-desktop-portal$"#
     open-floating true
 }
+
 window-rule {
     match app-id="Alacritty"
     match app-id="zen"
     match app-id="com.mitchellh.ghostty"
     match app-id="kitty"
+    open-floating false
+    default-column-width { proportion 0.5; }
     draw-border-with-background false
+    opacity 1.0
+}
+
+
+window-rule {
+    match app-id="steam_app"
+    clip-to-geometry true
+    tiled-state false
+    // open-floating true
+    open-fullscreen true
     opacity 1.0
 }
 
@@ -262,6 +277,10 @@ window-rule {
 window-rule {
     match app-id=r#"org.quickshell$"#
     open-floating true
+}
+window-rule {
+    match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
+    default-floating-position x=10 y=10 relative-to="bottom-right"
 }
 debug {
     honor-xdg-activation-with-invalid-serial
