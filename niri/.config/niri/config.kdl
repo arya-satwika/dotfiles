@@ -63,6 +63,13 @@ input {
     trackpoint {
     }
 }
+
+cursor {
+    xcursor-theme "Posy_Cursor_125_175"
+    xcursor-size 32
+}
+
+
 // You can configure outputs by their name, which you can find
 // by running `niri msg outputs` while inside a niri instance.
 // The built-in laptop monitor is usually called "eDP-1".
@@ -143,10 +150,14 @@ overview {
 // See the binds section below for more spawn examples.
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
-spawn-sh-at-startup "vicinae server"
+// spawn-sh-at-startup "vicinae server"
 
+spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-at-startup "dbus-update-activation-environment" "--systemd" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"
 spawn-at-startup "dbus-update-activation-environment" "--systemd" "XDG_MENU_PREFIX=arch-"
+spawn-at-startup "vesktop"
+spawn-at-startup "/opt/zen-browser-bin/zen-bin"
+
 environment {
    XDG_CURRENT_DESKTOP "niri"
    QT_QPA_PLATFORM "wayland"
