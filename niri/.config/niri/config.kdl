@@ -48,7 +48,7 @@ gestures {
 // Find the full list of options on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Input
 input {
-    focus-follows-mouse max-scroll-amount="70%"
+    focus-follows-mouse max-scroll-amount="10%"
     disable-power-key-handling
     keyboard {
         xkb {
@@ -157,6 +157,8 @@ spawn-at-startup "dbus-update-activation-environment" "--systemd" "WAYLAND_DISPL
 spawn-at-startup "dbus-update-activation-environment" "--systemd" "XDG_MENU_PREFIX=arch-"
 spawn-at-startup "vesktop"
 spawn-at-startup "/opt/zen-browser-bin/zen-bin"
+spawn-at-startup "spotify"
+
 
 environment {
    XDG_CURRENT_DESKTOP "niri"
@@ -212,7 +214,6 @@ animations {
 // Work around WezTerm's initial configure bug
 // by setting an empty default-column-width.
 
-spawn-at-startup "spotify"
 
 window-rule {
     // This regular expression is intentionally made as specific as possible,
@@ -316,6 +317,3 @@ include "dms/alttab.kdl"
 include "dms/binds.kdl"
 
 
-binds {
-    Mod+Shift+P { spawn-sh "dms ipc call powermenu toggle"; }
-}

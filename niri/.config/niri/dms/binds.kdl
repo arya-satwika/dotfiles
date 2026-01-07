@@ -5,12 +5,12 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // === Application Launchers ===
-    // Mod+Space hotkey-overlay-title="Application Launcher" {
-    //     spawn "dms" "ipc" "call" "spotlight" "toggle";
-    // }
-    Mod+Space  repeat=false hotkey-overlay-title="Vicinae Launcher" {
-        spawn "vicinae" "toggle";
+    Mod+Space hotkey-overlay-title="Application Launcher" {
+        spawn "dms" "ipc" "call" "spotlight" "toggle";
     }
+    // Mod+Space  repeat=false hotkey-overlay-title="Vicinae Launcher" {
+    //     spawn "vicinae" "toggle";
+    // }
     Mod+Return hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
     Mod+T { spawn-sh "kitty -e btop"; }
     Mod+Shift+I { spawn-sh "kitty -e pacsea"; }
@@ -200,4 +200,6 @@ binds {
     Alt+Print { screenshot-window; }
     // === System Controls ===
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
+    // === Open Power Menu ===
+    Mod+Shift+P { spawn-sh "dms ipc call powermenu toggle"; }
 }
