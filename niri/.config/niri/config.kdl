@@ -255,6 +255,12 @@ window-rule {
     opacity 1.0
 }
 
+window-rule {
+    match app-id="gsr-ui" title="gsr ui"
+    open-floating true
+    open-fullscreen false
+    opacity 1.0
+}
 
 window-rule {
     match app-id="steam_app"
