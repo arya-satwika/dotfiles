@@ -1,3 +1,7 @@
-vesktop/.config/vesktop/sessionData/Cache/Cache_Data
-vesktop/.config/vesktop/sessionData/Code Cache/js/index-dir/the-real-index
-vesktop/.config/vesktop/sessionData/Network Persistent State
+# vesktop/.config/vesktop/Crashpad/*
+# vesktop/.config/vesktop/sessionData/*
+# vesktop/.config/vesktop/SingletonCookie
+# vesktop/.config/vesktop/SingletionLock
+# vesktop/.config/vesktop/SingletonSocket
+
+
