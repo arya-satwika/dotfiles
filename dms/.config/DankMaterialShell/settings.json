@@ -24,7 +24,7 @@
   "showSeconds": false,
   "useFahrenheit": false,
   "nightModeEnabled": false,
-  "animationSpeed": 2,
+  "animationSpeed": 3,
   "customAnimationDuration": 500,
   "wallpaperFillMode": "Fill",
   "blurredWallpaperLayer": false,
@@ -58,6 +58,7 @@
   "controlCenterShowMicPercent": false,
   "controlCenterShowBatteryIcon": false,
   "controlCenterShowPrinterIcon": false,
+  "controlCenterShowScreenSharingIcon": true,
   "showPrivacyButton": true,
   "privacyShowMicIcon": false,
   "privacyShowCameraIcon": false,
@@ -101,7 +102,7 @@
   ],
   "showWorkspaceIndex": false,
   "showWorkspaceName": false,
-  "showWorkspacePadding": true,
+  "showWorkspacePadding": false,
   "workspaceScrolling": false,
   "showWorkspaceApps": false,
   "maxWorkspaceIcons": 3,
@@ -155,7 +156,7 @@
     }
   ],
   "centeringMode": "index",
-  "clockDateFormat": "MMM d",
+  "clockDateFormat": "ddd MMM d",
   "lockDateFormat": "",
   "mediaSize": 1,
   "appLauncherViewMode": "list",
@@ -185,9 +186,9 @@
       "cursorHideTimeout": 0
     }
   },
-  "launcherLogoMode": "os",
-  "launcherLogoCustomPath": "",
-  "launcherLogoColorOverride": "primary",
+  "launcherLogoMode": "custom",
+  "launcherLogoCustomPath": "/home/aryas/WDBlue link/[Photos]/logo A icon.svg",
+  "launcherLogoColorOverride": "surface",
   "launcherLogoColorInvertOnMode": false,
   "launcherLogoBrightness": 0.5,
   "launcherLogoContrast": 1,
@@ -261,12 +262,12 @@
   "dockOpenOnOverview": false,
   "dockPosition": 1,
   "dockSpacing": 8,
-  "dockBottomGap": 0,
+  "dockBottomGap": -22,
   "dockMargin": 0,
-  "dockIconSize": 48,
-  "dockIndicatorStyle": "circle",
+  "dockIconSize": 24,
+  "dockIndicatorStyle": "line",
   "dockBorderEnabled": false,
-  "dockBorderColor": "surfaceText",
+  "dockBorderColor": "primary",
   "dockBorderOpacity": 1,
   "dockBorderThickness": 1,
   "dockIsolateDisplays": false,
@@ -295,7 +296,7 @@
   "notificationHistorySaveLow": true,
   "notificationHistorySaveNormal": true,
   "notificationHistorySaveCritical": true,
-  "osdAlwaysShowValue": true,
+  "osdAlwaysShowValue": false,
   "osdPosition": 4,
   "osdVolumeEnabled": true,
   "osdMediaVolumeEnabled": true,
@@ -324,8 +325,8 @@
   "customPowerActionReboot": "",
   "customPowerActionPowerOff": "",
   "updaterHideWidget": false,
-  "updaterUseCustomCommand": false,
-  "updaterCustomCommand": "",
+  "updaterUseCustomCommand": true,
+  "updaterCustomCommand": "arch-update",
   "updaterTerminalAdditionalParams": "",
   "displayNameMode": "system",
   "screenPreferences": {},
@@ -344,8 +345,13 @@
       "showOnLastDisplay": true,
       "leftWidgets": [
         {
-          "id": "music",
+          "id": "launcherButton",
           "enabled": true
+        },
+        {
+          "id": "music",
+          "enabled": true,
+          "mediaSize": 2
         },
         {
           "id": "network_speed_monitor",
@@ -353,6 +359,10 @@
         },
         {
           "id": "colorPicker",
+          "enabled": true
+        },
+        {
+          "id": "systemUpdate",
           "enabled": true
         }
       ],
@@ -409,31 +419,35 @@
         }
       ],
       "spacing": 4,
-      "innerPadding": 0,
-      "bottomGap": 0,
+      "innerPadding": 4,
+      "bottomGap": -2,
       "transparency": 1,
-      "widgetTransparency": 1,
+      "widgetTransparency": 0.75,
       "squareCorners": false,
       "noBackground": false,
       "gothCornersEnabled": false,
       "gothCornerRadiusOverride": false,
-      "gothCornerRadiusValue": 12,
+      "gothCornerRadiusValue": 9,
       "borderEnabled": false,
       "borderColor": "surfaceText",
       "borderOpacity": 1,
       "borderThickness": 1,
       "widgetOutlineEnabled": false,
-      "widgetOutlineColor": "primary",
+      "widgetOutlineColor": "surfaceText",
       "widgetOutlineOpacity": 1,
       "widgetOutlineThickness": 1,
-      "fontScale": 1,
+      "fontScale": 0.95,
       "autoHide": false,
       "autoHideDelay": 250,
       "openOnOverview": false,
       "visible": true,
       "popupGapsAuto": true,
       "popupGapsManual": 4,
-      "maximizeDetection": true
+      "maximizeDetection": true,
+      "scrollYBehavior": "workspace",
+      "scrollXBehavior": "column",
+      "shadowOpacity": 30,
+      "shadowIntensity": 0
     }
   ],
   "desktopClockEnabled": false,
@@ -526,14 +540,14 @@
         "showGpuTemp": true,
         "gpuPciId": "10de:2187",
         "showMemory": true,
-        "showMemoryGraph": false,
+        "showMemoryGraph": true,
         "showNetwork": false,
         "showNetworkGraph": false,
-        "showDisk": false,
+        "showDisk": true,
         "showTopProcesses": false,
         "topProcessCount": 3,
         "topProcessSortBy": "cpu",
-        "layoutMode": "list",
+        "layoutMode": "grid",
         "graphInterval": 60,
         "displayPreferences": [],
         "showOnOverlay": false
@@ -541,32 +555,41 @@
       "positions": {
         "DP-1": {
           "width": 400,
-          "height": 760,
-          "x": 1480,
-          "y": 80
+          "height": 320,
+          "x": 1440,
+          "y": 120
+        },
+        "": {
+          "width": 160,
+          "height": 180,
+          "x": 0,
+          "y": 0
         }
       }
     },
     {
-      "id": "dw_1768551108433_gk3oa84d4",
-      "widgetType": "mediaPlayer",
-      "name": "Media Player",
+      "id": "dw_1770033472634_jghg0mek3",
+      "widgetType": "desktopClock",
+      "name": "Desktop Clock",
       "enabled": true,
       "config": {
+        "style": "analog",
+        "transparency": 0.8,
+        "colorMode": "primary",
+        "customColor": "#ffffff",
+        "showDate": true,
+        "showAnalogNumbers": false,
+        "showAnalogSeconds": true,
         "displayPreferences": [
           "all"
-        ],
-        "showOnOverlay": false,
-        "showOnOverview": false,
-        "clickThrough": false,
-        "backgroundOpacity": 80
+        ]
       },
       "positions": {
         "DP-1": {
-          "width": 563,
-          "height": 248,
-          "x": 40,
-          "y": 80
+          "width": 520,
+          "height": 520,
+          "x": 160,
+          "y": 480
         }
       }
     }
