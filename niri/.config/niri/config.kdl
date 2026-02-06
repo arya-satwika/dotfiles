@@ -11,7 +11,7 @@ output "DP-1" {
     // Uncomment this line to disable this output.
     // off
 
-    // Resolution and, optionally, refresh rate of the output.
+    // Resolution and, optionally, refresh rate cdthe output.
     // The format is "<width>x<height>" or "<width>x<height>@<refresh rate>".
     // If the refresh rate is omitted, niri will pick the highest refresh rate
     // for the resolution.
@@ -19,7 +19,7 @@ output "DP-1" {
     // Run `niri msg outputs` while inside a niri instance to list all outputs and their modes.
 
     // You can use integer or fractional scale, for example use 1.5 for 150% scale.
-    scale 1
+    scale 1.0
 
     // Transform allows to rotate the output counter-clockwise, valid values are:
     // normal, 90, 180, 270, flipped, flipped-90, flipped-180 and flipped-270.
@@ -34,7 +34,7 @@ output "DP-1" {
     // so to put another output directly adjacent to it on the right, set its x to 1920.
     // If the position is unset or results in an overlap, the output is instead placed
     // automatically.
-    position x=1280 y=0
+    position x=0 y=0
 }
 
 
@@ -89,22 +89,11 @@ layout {
     // - "always", the focused column will always be centered.
     // - "on-overflow", focusing a column will center it if it doesn't fit
     //   together with the previously focused column.
-    center-focused-column "on-overflow"
+    center-focused-column "never"
     // You can customize the widths that "switch-preset-column-width" (Mod+R) toggles between.
-    preset-column-widths {
-        // Proportion sets the width as a fraction of the output width, taking gaps into account.
-        // For example, you can perfectly fit four windows sized "proportion 0.25" on an output.
-        // The default preset widths are 1/3, 1/2 and 2/3 of the output.
-        proportion 0.33333
-        proportion 0.5
-        proportion 0.66667
-        // Fixed sets the width in logical pixels exactly.
-        // fixed 1920
-    }
     // You can also customize the heights that "switch-preset-window-height" (Mod+Shift+R) toggles between.
     // preset-window-heights { }
     // You can change the default width of the new windows.
-    default-column-width { proportion 0.5; }
     // If you leave the brackets empty, the windows themselves will decide their initial width.
     // default-column-width {}
     // By default focus ring and border are rendered as a solid background rectangle
@@ -149,65 +138,18 @@ overview {
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
 // This line starts waybar, a commonly used bar for Wayland compositors.
-spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
-// spawn-sh-at-startup "vicinae server"
 
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-at-startup "dbus-update-activation-environment" "--systemd" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"
 spawn-at-startup "dbus-update-activation-environment" "--systemd" "XDG_MENU_PREFIX=arch-"
+
+
 spawn-at-startup "vesktop"
-spawn-at-startup "/opt/zen-browser-bin/zen-bin"
 spawn-at-startup "spotify"
 
 
-environment {
-   XDG_CURRENT_DESKTOP "niri"
-   QT_QPA_PLATFORM "wayland"
-   QT_QPA_PLATFORMTHEME "qt6ct"
-   QT_NO_SYNTHESIZED_BOLD "1"
-   ELECTRON_OZONE_PLATFORM_HINT "auto"
-}
-hotkey-overlay {
-    skip-at-startup
-}
 prefer-no-csd
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
-animations {
-    workspace-switch {
-        spring damping-ratio=0.80 stiffness=523 epsilon=0.0001
-    }
-    window-open {
-        duration-ms 150
-        curve "ease-out-expo"
-    }
-    window-close {
-        duration-ms 150
-        curve "ease-out-quad"
-    }
-    horizontal-view-movement {
-      duration-ms 300
-      curve "cubic-bezier" 0.47 0 0 1.07
-      // spring damping-ratio=0.85 stiffness=423 epsilon=0.0001
-    }
-    window-movement {
-       duration-ms 350
-       curve "ease-out-expo"
-        // spring damping-ratio=0.75 stiffness=323 epsilon=0.0001
-    }
-    window-resize {
-        spring damping-ratio=0.85 stiffness=423 epsilon=0.0001
-    }
-    config-notification-open-close {
-        spring damping-ratio=0.65 stiffness=923 epsilon=0.001
-    }
-    screenshot-ui-open {
-        duration-ms 200
-        curve "ease-out-quad"
-    }
-    overview-open-close {
-        spring damping-ratio=0.85 stiffness=800 epsilon=0.0001
-    }
-}
 // Window rules let you adjust behavior for individual windows.
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
@@ -262,19 +204,6 @@ window-rule {
     opacity 1.0
 }
 
-window-rule {
-    match app-id="steam_app"
-    clip-to-geometry true
-    tiled-state false
-    // open-floating true
-    open-fullscreen true
-    opacity 1.0
-}
-
-window-rule{
-    match app-id="zen"
-    default-column-width { proportion 0.9; }
-}
 
 window-rule{
     match app-id="vesktop"
@@ -295,10 +224,6 @@ window-rule {
 window-rule {
     match app-id=r#"org.quickshell$"#
     open-floating true
-}
-window-rule {
-    match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
-    default-floating-position x=10 y=10 relative-to="bottom-right"
 }
 debug {
     honor-xdg-activation-with-invalid-serial
@@ -321,5 +246,6 @@ include "dms/colors.kdl"
 include "dms/layout.kdl"
 include "dms/alttab.kdl"
 include "dms/binds.kdl"
+include "global.kdl"
 
 
