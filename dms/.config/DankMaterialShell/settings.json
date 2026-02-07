@@ -187,7 +187,7 @@
     }
   },
   "launcherLogoMode": "custom",
-  "launcherLogoCustomPath": "/home/aryas/WDBlue link/[Photos]/logo A icon.svg",
+  "launcherLogoCustomPath": "/home/aryas/dotfiles/logo A icon.svg",
   "launcherLogoColorOverride": "surface",
   "launcherLogoColorInvertOnMode": false,
   "launcherLogoBrightness": 0.5,
@@ -386,14 +386,6 @@
           "enabled": true
         },
         {
-          "id": "clipboard",
-          "enabled": true
-        },
-        {
-          "id": "cpuTemp",
-          "enabled": true
-        },
-        {
           "id": "cpuUsage",
           "enabled": true
         },
@@ -564,6 +556,12 @@
           "height": 180,
           "x": 0,
           "y": 0
+        },
+        "eDP-1": {
+          "width": 320,
+          "height": 480,
+          "x": 80.29296875,
+          "y": 112.21484375
         }
       }
     },
@@ -590,6 +588,12 @@
           "height": 520,
           "x": 160,
           "y": 480
+        },
+        "eDP-1": {
+          "width": 354.42578125,
+          "height": 354.42578125,
+          "x": 1085.74609375,
+          "y": 143.3203125
         }
       }
     }
