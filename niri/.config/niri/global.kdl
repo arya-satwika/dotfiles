@@ -26,6 +26,8 @@ environment {
    QT_NO_SYNTHESIZED_BOLD "1"
    ELECTRON_OZONE_PLATFORM_HINT "auto"
    EDITOR "nano"
+   TERM "kitty"
+   TERMINAL "kitty"
 }
 
 hotkey-overlay {
