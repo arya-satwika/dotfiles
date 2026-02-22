@@ -22,7 +22,7 @@ spawn-at-startup "/opt/zen-browser-bin/zen-bin"
 environment {
    XDG_CURRENT_DESKTOP "niri"
    QT_QPA_PLATFORM "wayland"
-   QT_QPA_PLATFORMTHEME "qt6ct"
+   QT_QPA_PLATFORMTHEME "qt6ct-kde"
    QT_NO_SYNTHESIZED_BOLD "1"
    ELECTRON_OZONE_PLATFORM_HINT "auto"
    EDITOR "nano"
@@ -71,6 +71,21 @@ animations {
     }
 }
 
+workspace "socials" {
+    layout {
+        center-focused-column "never"
+        always-center-single-column
+        default-column-width { proportion 0.6; }
+    }
+}
+
+workspace "main"{
+    layout {
+        center-focused-column "on-overflow"
+        always-center-single-column
+    }
+}
+
 window-rule {
     match app-id="steam_app"
     clip-to-geometry true
@@ -83,9 +98,27 @@ window-rule {
 window-rule{
     match app-id="zen"
     default-column-width { proportion 0.9; }
+    open-on-workspace "main"
 }
+
+window-rule {
+    match app-id="spotify"
+    default-column-width { proportion 0.7; }
+    open-on-workspace "main"
+}
+
 
 window-rule {
     match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
     default-floating-position x=10 y=10 relative-to="bottom-right"
+}
+
+window-rule {
+    match app-id="vesktop"
+    open-on-workspace "socials"
+}
+
+window-rule {
+    match app-id="elecwhat"
+    open-on-workspace "socials"
 }
