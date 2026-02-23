@@ -75,7 +75,7 @@ workspace "socials" {
     layout {
         center-focused-column "never"
         always-center-single-column
-        default-column-width { proportion 0.6; }
+        default-column-width { proportion 0.55; }
     }
 }
 
@@ -107,6 +107,10 @@ window-rule {
     open-on-workspace "main"
 }
 
+window-rule {
+    match app-id="Minecraft"
+    open-maximized-to-edges true
+}
 
 window-rule {
     match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
@@ -116,9 +120,18 @@ window-rule {
 window-rule {
     match app-id="vesktop"
     open-on-workspace "socials"
+    block-out-from "screencast"
 }
 
 window-rule {
     match app-id="elecwhat"
     open-on-workspace "socials"
+    block-out-from "screencast"
+}
+window-rule {
+    match app-id="droidcam"
+    open-on-workspace "main"
+    open-floating false
+    open-focused true
+    block-out-from "screencast"
 }
