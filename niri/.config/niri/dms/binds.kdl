@@ -5,17 +5,17 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
     Ctrl+F3 { spawn-sh "dms ipc audio cycleoutput"; }
     // === Application Launchers ===
-    // Mod+Space hotkey-overlay-title="Application Launcher" {
-    //     spawn "dms" "ipc" "call" "spotlight" "toggle";
-    // }
-    Mod+Space  repeat=false hotkey-overlay-title="Vicinae Launcher" {
-        spawn "vicinae" "toggle";
+    Mod+Space hotkey-overlay-title="Application Launcher" {
+        spawn "dms" "ipc" "call" "spotlight" "toggle";
     }
+    // Mod+Space  repeat=false hotkey-overlay-title="Vicinae Launcher" {
+    //     spawn "vicinae" "toggle";
+    // }
     Mod+Return hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
     Mod+T { spawn-sh "kitty -e btop"; }
     Mod+Shift+I { spawn-sh "kitty -e pacsea"; }
     Mod+N { spawn "code"; }
-    Mod+E { spawn "dolphin"; }
+    Mod+E { spawn "nautilus"; }
     Mod+B { spawn "helium-browser"; }
 
     Mod+V hotkey-overlay-title="Clipboard Manager" {
@@ -74,8 +74,8 @@ binds {
 
     // === Focus Navigation ===
     Mod+Left  { focus-column-left; }
-    Mod+Down  { focus-window-down; }
-    Mod+Up    { focus-window-up; }
+    // Mod+Down  { focus-window-down; }
+    // Mod+Up    { focus-window-up; }
     Mod+Right { focus-column-right; }
     Mod+H     { focus-column-left; }
     Mod+J     { focus-window-down; }
@@ -129,6 +129,8 @@ binds {
     Mod+Ctrl+I         { move-column-to-workspace-up; }
 
     // === Move Workspaces ===
+    Mod+Up { focus-workspace-up; }
+    Mod+Down { focus-workspace-down; }
     Mod+Shift+Page_Down { move-workspace-down; }
     Mod+Shift+Page_Up   { move-workspace-up; }
     Mod+Shift+U         { move-workspace-down; }

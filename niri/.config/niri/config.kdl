@@ -91,7 +91,6 @@ layout {
     // - "always", the focused column will always be centered.
     // - "on-overflow", focusing a column will center it if it doesn't fit
     //   together with the previously focused column.
-    center-focused-column "never"
     // You can customize the widths that "switch-preset-column-width" (Mod+R) toggles between.
     // You can also customize the heights that "switch-preset-window-height" (Mod+Shift+R) toggles between.
     // preset-window-heights { }
@@ -185,7 +184,7 @@ window-rule {
     match app-id=r#"^blueman-manager$"#
     match app-id=r#"^org\.gnome\.Nautilus$"#
     match app-id=r#"^xdg-desktop-portal$"#
-    open-floating true
+    open-floating false
 }
 
 window-rule {
@@ -206,12 +205,6 @@ window-rule {
     opacity 1.0
 }
 
-
-window-rule{
-    match app-id="vesktop"
-    match app-id="spotify"
-    default-column-width { proportion 0.7; }
-}
 
 window-rule {
     match is-active=false
@@ -251,3 +244,5 @@ include "dms/binds.kdl"
 include "global.kdl"
 
 
+
+include "dms/windowrules.kdl"
