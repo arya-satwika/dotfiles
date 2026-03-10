@@ -4,6 +4,8 @@ binds {
     Mod+Tab repeat=false { toggle-overview; }
     Mod+Shift+Slash { show-hotkey-overlay; }
     Ctrl+F3 { spawn-sh "dms ipc audio cycleoutput"; }
+    // Toggle Droidcam
+    Mod+F12 { spawn-sh "pkill droidcam-cli || exec droidcam-cli 192.168.0.196 4747";}
     // === Application Launchers ===
     Mod+Space hotkey-overlay-title="Application Launcher" {
         spawn "dms" "ipc" "call" "spotlight" "toggle";
@@ -13,7 +15,7 @@ binds {
     // }
     Mod+Return hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
     Mod+T { spawn-sh "kitty -e btop"; }
-    Mod+Shift+I { spawn-sh "kitty -e pacsea"; }
+    Mod+P { spawn-sh "kitty -e pacsea"; }
     Mod+N { spawn "code"; }
     Mod+E { spawn "nautilus"; }
     Mod+B { spawn "helium-browser"; }
@@ -28,7 +30,7 @@ binds {
         spawn "dms" "ipc" "call" "settings" "focusOrToggle";
     }
     Mod+Y hotkey-overlay-title="Browse Wallpapers" {
-        spawn "dms" "ipc" "call" "dankdash" "wallpaper";
+        spawn "dms" "ipc" "wallpaperCarousel" "open";
     }
     // Mod+N hotkey-overlay-title="Notification Center" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
     Mod+Shift+N hotkey-overlay-title="Notepad" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
@@ -74,9 +76,10 @@ binds {
 
     // === Focus Navigation ===
     Mod+Left  { focus-column-left; }
-    // Mod+Down  { focus-window-down; }
-    // Mod+Up    { focus-window-up; }
+    Mod+Down  { focus-window-down; }
+    Mod+Up    { focus-window-up; }
     Mod+Right { focus-column-right; }
+
     Mod+H     { focus-column-left; }
     Mod+J     { focus-window-down; }
     Mod+K     { focus-window-up; }
@@ -87,6 +90,8 @@ binds {
     Mod+Shift+Down  { move-window-down; }
     Mod+Shift+Up    { move-window-up; }
     Mod+Shift+Right { move-column-right; }
+    Mod+Shift+BracketLeft { move-column-left; }
+    Mod+Shift+BracketRight { move-column-right; }
     Mod+Shift+H     { move-column-left; }
     Mod+Shift+J     { move-window-down; }
     Mod+Shift+K     { move-window-up; }
@@ -100,8 +105,10 @@ binds {
 
     // === Monitor Navigation ===
     Mod+Ctrl+Left  { focus-monitor-left; }
-    //Mod+Ctrl+Down  { focus-monitor-down; }
-    //Mod+Ctrl+Up    { focus-monitor-up; }
+    // Mod+Shift+Down  { focus-monitor-down; }
+    // Mod+Shift+Up    { focus-monitor-up; }
+    Mod+BracketLeft { focus-column-left; }
+    Mod+BracketRight { focus-column-right; }
     Mod+Ctrl+Right { focus-monitor-right; }
     Mod+Ctrl+H     { focus-monitor-left; }
     Mod+Ctrl+J     { focus-monitor-down; }
@@ -123,18 +130,20 @@ binds {
     Mod+Page_Up        { focus-workspace-up; }
     Mod+U              { focus-workspace-down; }
     Mod+I              { focus-workspace-up; }
+    Mod+Apostrophe     { focus-workspace-up; }
+    Mod+Slash     { focus-workspace-down; }
     Mod+Ctrl+Down { move-column-to-workspace-down; }
     Mod+Ctrl+Up   { move-column-to-workspace-up; }
     Mod+Ctrl+U         { move-column-to-workspace-down; }
     Mod+Ctrl+I         { move-column-to-workspace-up; }
 
     // === Move Workspaces ===
-    Mod+Up { focus-workspace-up; }
-    Mod+Down { focus-workspace-down; }
+    // Mod+Up { focus-workspace-up; }
+    // Mod+Down { focus-workspace-down; }
     Mod+Shift+Page_Down { move-workspace-down; }
     Mod+Shift+Page_Up   { move-workspace-up; }
     Mod+Shift+U         { move-workspace-down; }
-    // Mod+Shift+I         { move-workspace-up; }
+    Mod+Shift+I         { move-workspace-up; }
 
     // === Mouse Wheel Navigation ===
     Mod+WheelScrollDown cooldown-ms=150   { focus-workspace-down; }
@@ -175,9 +184,9 @@ binds {
     Mod+Shift+9 { move-column-to-workspace 9; }
 
     // === Column Management ===
-    Mod+BracketLeft  { consume-or-expel-window-left; }
-    Mod+BracketRight { consume-or-expel-window-right; }
-    Mod+Period { expel-window-from-column; }
+    Mod+Alt+BracketLeft  { consume-or-expel-window-left; }
+    Mod+Alt+BracketRight { consume-or-expel-window-right; }
+    // Mod+Period { expel-window-from-column; }
 
     // === Sizing & Layout ===
     Mod+R { switch-preset-column-width; }
@@ -188,10 +197,10 @@ binds {
     Mod+Ctrl+C { center-visible-columns; }
 
     // === Manual Sizing ===
-    Mod+Minus { set-column-width "-10%"; }
-    Mod+Equal { set-column-width "+10%"; }
-    Mod+Shift+Minus { set-window-height "-10%"; }
-    Mod+Shift+Equal { set-window-height "+10%"; }
+    Mod+Minus { set-column-width "-5%"; }
+    Mod+Equal { set-column-width "+5%"; }
+    Mod+Shift+Minus { set-window-height "-5%"; }
+    Mod+Shift+Equal { set-window-height "+5%"; }
 
     // === Screenshots ===s
     XF86Launch1 { screenshot; }
@@ -202,7 +211,7 @@ binds {
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
     // === System Controls ===
-    Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
+    // Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
     // === Open Power Menu ===
     Mod+Shift+P { spawn-sh "dms ipc call powermenu toggle"; }
 }
