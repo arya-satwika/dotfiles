@@ -17,7 +17,7 @@ binds {
     Mod+T { spawn-sh "kitty -e btop"; }
     Mod+P { spawn-sh "kitty -e pacsea"; }
     Mod+N { spawn "code"; }
-    Mod+E { spawn "nautilus"; }
+    Mod+E { spawn "dolphin"; }
     Mod+B { spawn "helium-browser"; }
 
     Mod+V hotkey-overlay-title="Clipboard Manager" {
@@ -30,7 +30,7 @@ binds {
         spawn "dms" "ipc" "call" "settings" "focusOrToggle";
     }
     Mod+Y hotkey-overlay-title="Browse Wallpapers" {
-        spawn "dms" "ipc" "wallpaperCarousel" "open";
+        spawn "dms" "ipc" "wallpaperCarousel" "toggle";
     }
     // Mod+N hotkey-overlay-title="Notification Center" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
     Mod+Shift+N hotkey-overlay-title="Notepad" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
@@ -146,8 +146,8 @@ binds {
     Mod+Shift+I         { move-workspace-up; }
 
     // === Mouse Wheel Navigation ===
-    Mod+WheelScrollDown cooldown-ms=150   { focus-workspace-down; }
-    Mod+WheelScrollUp   cooldown-ms=150      { focus-workspace-up; }
+    Mod+WheelScrollDown cooldown-ms=60   { focus-workspace-down; }
+    Mod+WheelScrollUp   cooldown-ms=60      { focus-workspace-up; }
     Mod+Ctrl+WheelScrollDown cooldown-ms=150 { move-column-to-workspace-down; }
     Mod+Ctrl+WheelScrollUp   cooldown-ms=150 { move-column-to-workspace-up; }
 
