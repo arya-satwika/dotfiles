@@ -20,6 +20,7 @@ stow vesktop #replace vesktop with name of app config that u want
 - Distortion dos Analogue
 
 ### Screenshots
+---
 ![1](assets/1.png)
 ![2](assets/2.png)
 ![3](assets/3.png)
