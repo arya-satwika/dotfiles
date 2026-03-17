@@ -13,6 +13,7 @@ stow vesktop #replace vesktop with name of app config that u want
 ## Other Repos used
 - [omarchy pmndrs](https://github.com/leweyse/omarchy-pmndrs-theme/)
 - [sddm astronaut theme](https://github.com/Keyitdev/sddm-astronaut-theme)
+- [lucidglyph](https://github.com/maximilionus/lucidglyph)
 
 ## Fonts, Icons, and Cursor used
 - JetBrains Mono Nerd Font
