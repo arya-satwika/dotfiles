@@ -6,8 +6,8 @@ config-notification {
     disable-failed
 }
 // Outputs from existing configuration
-output "DP-1" {
-    mode "1920x1080@165.001"
+output "eDP-1" {
+    mode "1920x1200@60.001"
     // Uncomment this line to disable this output.
     // off
 

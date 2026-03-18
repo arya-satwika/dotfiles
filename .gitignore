@@ -3,4 +3,6 @@
 # vesktop/.config/vesktop/SingletonCookie
 # vesktop/.config/vesktop/SingletionLock
 # vesktop/.config/vesktop/SingletonSocket
-vesktop/.config/vesktop/themes/dank-discord.css
+/vesktop/.config/vesktop/themes/dank-discord.css
+niri/.config/niri/config.kdl
+dms/.config/DankMaterialShell/settings.json
