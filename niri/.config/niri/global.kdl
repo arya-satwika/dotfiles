@@ -9,8 +9,24 @@ layout{
         // Fixed sets the width in logical pixels exactly.
         // fixed 1920
     }
+    background-color "transparent"
     default-column-width { proportion 0.5; }
 }    
+
+// Set the regular wallpaper on the backdrop.
+layer-rule {
+  match namespace="^noctalia-wallpaper*"
+  place-within-backdrop true
+}
+
+// Set transparent workspace background color so you see the backdrop at all times.
+
+// Optionally, disable the workspace shadows in the overview.
+overview {
+  workspace-shadow {
+    off
+  }
+}
 
 cursor {
     xcursor-theme "Posy_Cursor_125_175"
