@@ -3,16 +3,15 @@ binds {
     Mod+D repeat=false { toggle-overview; }
     Mod+Tab repeat=false { toggle-overview; }
     Mod+Shift+Slash { show-hotkey-overlay; }
-    Ctrl+F3 { spawn-sh "dms ipc audio cycleoutput"; }
+    // NOTE: No direct cycleoutput in Noctalia; mapped to muteOutput as closest alternative
+    Ctrl+F3 { spawn-sh "qs -c noctalia-shell ipc call volume muteOutput"; }
     // Toggle Droidcam
     Mod+F12 { spawn-sh "pkill droidcam-cli || exec droidcam-cli 192.168.0.196 4747";}
+
     // === Application Launchers ===
     Mod+Space hotkey-overlay-title="Application Launcher" {
-        spawn "dms" "ipc" "call" "spotlight" "toggle";
+        spawn-sh "qs -c noctalia-shell ipc call launcher toggle";
     }
-    // Mod+Space  repeat=false hotkey-overlay-title="Vicinae Launcher" {
-    //     spawn "vicinae" "toggle";
-    // }
     Mod+Return hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
     Mod+T { spawn-sh "kitty -e btop"; }
     Mod+P { spawn-sh "kitty -e pacsea"; }
@@ -20,51 +19,55 @@ binds {
     Mod+E { spawn "dolphin"; }
     Mod+B { spawn "helium-browser"; }
 
+    // NOTE: No built-in clipboard panel in Noctalia core; use a plugin (plugin ID may differ)
     Mod+V hotkey-overlay-title="Clipboard Manager" {
-        spawn "dms" "ipc" "call" "clipboard" "toggle";
+        spawn-sh "qs -c noctalia-shell ipc call launcher clipboard";
     }
+    // NOTE: No built-in process list panel in Noctalia core; use a plugin (plugin ID may differ)
     Mod+M hotkey-overlay-title="Task Manager" {
-        spawn "dms" "ipc" "call" "processlist" "focusOrToggle";
+        spawn-sh "qs -c noctalia-shell ipc call plugin:processlist toggle";
     }
     Mod+Comma hotkey-overlay-title="Settings" {
-        spawn "dms" "ipc" "call" "settings" "focusOrToggle";
+        spawn-sh "qs -c noctalia-shell ipc call settings toggle";
     }
     Mod+Y hotkey-overlay-title="Browse Wallpapers" {
-        spawn "dms" "ipc" "wallpaperCarousel" "toggle";
+        spawn-sh "qs -c noctalia-shell ipc call wallpaper toggle";
     }
-    // Mod+N hotkey-overlay-title="Notification Center" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
-    Mod+Shift+N hotkey-overlay-title="Notepad" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
-
+    // NOTE: No built-in notepad panel in Noctalia core; use a plugin (plugin ID may differ)
+    Mod+Shift+N hotkey-overlay-title="Notepad" {
+        spawn-sh "qs -c noctalia-shell ipc call plugin:notepad toggle";
+    }
 
     // === Security ===
     Mod+Alt+L hotkey-overlay-title="Lock Screen" {
-        spawn "dms" "ipc" "call" "lock" "lock";
+        spawn-sh "qs -c noctalia-shell ipc call lockScreen lock";
     }
     Mod+Shift+E { quit; }
+    // NOTE: No built-in process list panel in Noctalia core; use a plugin (plugin ID may differ)
     Ctrl+Alt+Delete hotkey-overlay-title="Task Manager" {
-        spawn "dms" "ipc" "call" "processlist" "focusOrToggle";
+        spawn-sh "qs -c noctalia-shell ipc call plugin:processlist toggle";
     }
 
     // === Audio Controls ===
     XF86AudioRaiseVolume allow-when-locked=true {
-        spawn "dms" "ipc" "call" "audio" "increment" "3";
+        spawn-sh "qs -c noctalia-shell ipc call volume increase";
     }
     XF86AudioLowerVolume allow-when-locked=true {
-        spawn "dms" "ipc" "call" "audio" "decrement" "3";
+        spawn-sh "qs -c noctalia-shell ipc call volume decrease";
     }
     XF86AudioMute allow-when-locked=true {
-        spawn "dms" "ipc" "call" "audio" "mute";
+        spawn-sh "qs -c noctalia-shell ipc call volume muteOutput";
     }
     XF86AudioMicMute allow-when-locked=true {
-        spawn "dms" "ipc" "call" "audio" "micmute";
+        spawn-sh "qs -c noctalia-shell ipc call volume muteInput";
     }
 
     // === Brightness Controls ===
     XF86MonBrightnessUp allow-when-locked=true {
-       spawn "dms" "ipc" "call" "brightness" "increment" "5" "";
+        spawn-sh "qs -c noctalia-shell ipc call brightness increase";
     }
     XF86MonBrightnessDown allow-when-locked=true {
-       spawn "dms" "ipc" "call" "brightness" "decrement" "5" "";
+        spawn-sh "qs -c noctalia-shell ipc call brightness decrease";
     }
 
     // === Window Management ===
@@ -105,8 +108,6 @@ binds {
 
     // === Monitor Navigation ===
     Mod+Ctrl+Left  { focus-monitor-left; }
-    // Mod+Shift+Down  { focus-monitor-down; }
-    // Mod+Shift+Up    { focus-monitor-up; }
     Mod+BracketLeft { focus-column-left; }
     Mod+BracketRight { focus-column-right; }
     Mod+Ctrl+Right { focus-monitor-right; }
@@ -131,15 +132,13 @@ binds {
     Mod+U              { focus-workspace-down; }
     Mod+I              { focus-workspace-up; }
     Mod+Apostrophe     { focus-workspace-up; }
-    Mod+Slash     { focus-workspace-down; }
+    Mod+Slash          { focus-workspace-down; }
     Mod+Ctrl+Down { move-column-to-workspace-down; }
     Mod+Ctrl+Up   { move-column-to-workspace-up; }
     Mod+Ctrl+U         { move-column-to-workspace-down; }
     Mod+Ctrl+I         { move-column-to-workspace-up; }
 
     // === Move Workspaces ===
-    // Mod+Up { focus-workspace-up; }
-    // Mod+Down { focus-workspace-down; }
     Mod+Shift+Page_Down { move-workspace-down; }
     Mod+Shift+Page_Up   { move-workspace-up; }
     Mod+Shift+U         { move-workspace-down; }
@@ -147,17 +146,17 @@ binds {
 
     // === Mouse Wheel Navigation ===
     Mod+WheelScrollDown cooldown-ms=60   { focus-workspace-down; }
-    Mod+WheelScrollUp   cooldown-ms=60      { focus-workspace-up; }
+    Mod+WheelScrollUp   cooldown-ms=60   { focus-workspace-up; }
     Mod+Ctrl+WheelScrollDown cooldown-ms=150 { move-column-to-workspace-down; }
     Mod+Ctrl+WheelScrollUp   cooldown-ms=150 { move-column-to-workspace-up; }
 
-    Mod+WheelScrollRight cooldown-ms=150      { focus-column-right; }
-    Mod+WheelScrollLeft  cooldown-ms=150      { focus-column-left; }
+    Mod+WheelScrollRight cooldown-ms=150 { focus-column-right; }
+    Mod+WheelScrollLeft  cooldown-ms=150 { focus-column-left; }
     Mod+Ctrl+WheelScrollRight { move-column-right; }
     Mod+Ctrl+WheelScrollLeft  { move-column-left; }
 
     Mod+Shift+WheelScrollDown  { focus-column-right; }
-    Mod+Shift+WheelScrollUp  { focus-column-left; }
+    Mod+Shift+WheelScrollUp    { focus-column-left; }
     Mod+Ctrl+Shift+WheelScrollDown { move-column-right; }
     Mod+Ctrl+Shift+WheelScrollUp   { move-column-left; }
 
@@ -186,7 +185,6 @@ binds {
     // === Column Management ===
     Mod+Alt+BracketLeft  { consume-or-expel-window-left; }
     Mod+Alt+BracketRight { consume-or-expel-window-right; }
-    // Mod+Period { expel-window-from-column; }
 
     // === Sizing & Layout ===
     Mod+R { switch-preset-column-width; }
@@ -202,16 +200,17 @@ binds {
     Mod+Shift+Minus { set-window-height "-5%"; }
     Mod+Shift+Equal { set-window-height "+5%"; }
 
-    // === Screenshots ===s
+    // === Screenshots ===
     XF86Launch1 { screenshot; }
     Ctrl+XF86Launch1 { screenshot-screen; }
     Alt+XF86Launch1 { screenshot-window; }
+    // NOTE: dms screenshot replaced; use your preferred screenshot tool here
     Mod+Shift+S { spawn-sh "dms screenshot"; }
-    Mod+Ctrl+Shift+S {spawn-sh "dms screenshot full"; }
+    Mod+Ctrl+Shift+S { spawn-sh "dms screenshot full"; }
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
-    // === System Controls ===
-    // Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
+
     // === Open Power Menu ===
-    Mod+Shift+P { spawn-sh "dms ipc call powermenu toggle"; }
+    // NOTE: No built-in power menu in Noctalia core; use a plugin (plugin ID may differ)
+    Mod+Shift+P { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
 }

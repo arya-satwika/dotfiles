@@ -37,7 +37,7 @@ output "eDP-1" {
     position x=0 y=0
 }
 
-
+prefer-no-csd
 gestures {
     hot-corners {
         off
@@ -107,19 +107,6 @@ layout {
     //
     // Alternatively, you can override it with a window rule called
     // `draw-border-with-background`.
-    border {
-        off
-        width 4
-        active-color   "#707070"      // Neutral gray
-        inactive-color "#d0d0d0"      // Light gray
-        urgent-color   "#cc4444"      // Softer red
-    }
-    shadow {
-        softness 30
-        spread 5
-        offset x=0 y=5
-        color "#0007"
-    }
     struts {
         top 4
         bottom 4
@@ -140,16 +127,19 @@ overview {
 // See the binds section below for more spawn examples.
 // This line starts waybar, a commonly used bar for Wayland compositors.
 
-spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
-spawn-at-startup "dbus-update-activation-environment" "--systemd" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"
-spawn-at-startup "dbus-update-activation-environment" "--systemd" "XDG_MENU_PREFIX=arch-"
+// spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+// spawn-at-startup "dbus-update-activation-environment" "--systemd" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"
+// spawn-at-startup "dbus-update-activation-environment" "--systemd" "XDG_MENU_PREFIX=arch-"
 
 
 spawn-at-startup "vesktop"
 spawn-at-startup "spotify"
 
+// to make dolphin's app picker work on niri
+spawn-at-startup "dbus-update-activation-environment" "--systemd" "XDG_MENU_PREFIX=arch-"
 
-prefer-no-csd
+
+
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 // Window rules let you adjust behavior for individual windows.
 // Find more information on the wiki:
@@ -237,12 +227,8 @@ recent-windows {
 }
 
 // Include dms files
-include "dms/colors.kdl"
 include "dms/layout.kdl"
-include "dms/alttab.kdl"
 include "dms/binds.kdl"
 include "global.kdl"
 
-
-
-include "dms/windowrules.kdl"
+include "./noctalia.kdl"
