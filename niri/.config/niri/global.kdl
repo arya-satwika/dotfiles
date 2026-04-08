@@ -11,6 +11,14 @@ layout{
     }
     default-column-width { proportion 0.5; }
 }    
+
+cursor {
+    xcursor-theme "Posy_Cursor_125_175"
+    xcursor-size 24
+}
+
+spawn-at-startup "qs" "-c" "noctalia-shell"
+
 spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
 spawn-sh-at-startup "vicinae server"
 
@@ -39,7 +47,7 @@ animations {
         spring damping-ratio=0.80 stiffness=523 epsilon=0.0001
     }
     window-open {
-        duration-ms 150
+        duration-ms 300
         curve "ease-out-expo"
     }
     window-close {

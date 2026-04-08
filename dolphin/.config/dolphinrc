@@ -1,14 +1,15 @@
 [General]
 EditableUrl=true
+GlobalViewProps=false
 ShowFullPath=true
+ShowToolTips=true
 Version=202
-ViewPropsTimestamp=2026,1,6,15,45,48.625
+ViewPropsTimestamp=2026,4,4,10,42,51.748
 
 [IconsMode]
-PreviewSize=128
-
-[UiSettings]
-ColorScheme=DankMatugen
+IconSize=16
+PreviewSize=96
+TextWidthIndex=0
 
 [KFileDialog Settings]
 Places Icons Auto-resize=false
@@ -21,4 +22,4 @@ MenuBar=Disabled
 Plugins=ffmpegthumbnailer,appimagethumbnail,audiothumbnail,glycin-heif,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,glycin-image-rs,jpegthumbnail,glycin-jxl,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,gsf-office,mobithumbnail,opendocumentthumbnail,gsthumbnail,rawthumbnail,glycin-svg,svgthumbnail,ffmpegthumbs,exe-thumbnailer
 
 [UiSettings]
-ColorScheme=DankMatugen
+ColorScheme=noctalia
