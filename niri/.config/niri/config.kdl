@@ -2,9 +2,9 @@
 // "/-" comments out the following node.
 // Check the wiki for a full description of the configuration:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Introduction
-config-notification {
-    disable-failed
-}
+// config-notification {
+//     disable-failed
+// }
 // Outputs from existing configuration
 output "eDP-1" {
     mode "1920x1200@60.001"
@@ -227,8 +227,8 @@ recent-windows {
 }
 
 // Include dms files
-include "dms/layout.kdl"
-include "dms/binds.kdl"
+include "binds.kdl"
 include "global.kdl"
+include "layouts.kdl"
 
-include "./noctalia.kdl"
+include "noctalia.kdl"
