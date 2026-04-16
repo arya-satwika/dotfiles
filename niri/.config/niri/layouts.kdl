@@ -1,8 +1,8 @@
 layout {
     gaps 8
     struts{
-        top 3
-        bottom 3
+        top 2
+        bottom 2
     }
     focus-ring{
         width 2

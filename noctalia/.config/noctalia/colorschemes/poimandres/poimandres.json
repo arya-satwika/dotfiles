@@ -10,11 +10,11 @@
     "mOnError": "#1B212E",
     "mSurface": "#1b1e28",
     "mOnSurface": "#E4F0FB",
-    "mHover": "#303340",
+    "mHover": "#7496b5",
     "mOnHover": "#ffffff",
     "mSurfaceVariant": "#25272f",
     "mOnSurfaceVariant": "#ffffff",
-    "mOutline": "#91b4d5",
+    "mOutline": "#89ddff",
     "mShadow": "#10172e",
     "terminal": {
       "normal": {
