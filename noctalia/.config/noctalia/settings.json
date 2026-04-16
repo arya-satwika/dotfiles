@@ -657,7 +657,7 @@
         }
     },
     "osd": {
-        "autoHideMs": 2000,
+        "autoHideMs": 1200,
         "backgroundOpacity": 1,
         "enabled": true,
         "enabledTypes": [
