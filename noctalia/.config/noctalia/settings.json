@@ -85,18 +85,18 @@
                     "enableScrollWheel": true,
                     "focusedColor": "primary",
                     "followFocusedScreen": false,
-                    "fontWeight": "medium",
+                    "fontWeight": "regular",
                     "groupedBorderOpacity": 1,
                     "hideUnoccupied": false,
-                    "iconScale": 0.8,
+                    "iconScale": 0.64,
                     "id": "Workspace",
                     "labelMode": "none",
                     "occupiedColor": "none",
-                    "pillSize": 0.55,
+                    "pillSize": 0.45,
                     "showApplications": false,
                     "showApplicationsHover": false,
-                    "showBadge": true,
-                    "showLabelsOnlyWhenOccupied": true,
+                    "showBadge": false,
+                    "showLabelsOnlyWhenOccupied": false,
                     "unfocusedIconsOpacity": 1
                 },
                 {
@@ -237,7 +237,7 @@
                 {
                     "hideWhenZero": false,
                     "hideWhenZeroUnread": false,
-                    "iconColor": "primary",
+                    "iconColor": "secondary",
                     "id": "NotificationHistory",
                     "showUnreadBadge": true,
                     "unreadBadgeColor": "error"
@@ -313,7 +313,7 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "tonal-spot",
+        "generationMethod": "content",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
@@ -410,8 +410,8 @@
                         "scale": 1.4242640687119286,
                         "showBackground": true,
                         "useCustomFont": false,
-                        "x": 1487,
-                        "y": 108
+                        "x": 1529,
+                        "y": 767
                     },
                     {
                         "diskPath": "/",
@@ -425,25 +425,12 @@
                         "y": 100
                     },
                     {
-                        "hideMode": "visible",
-                        "id": "MediaPlayer",
-                        "roundedCorners": true,
-                        "scale": 1.2781286672667087,
-                        "showAlbumArt": true,
-                        "showBackground": true,
-                        "showButtons": true,
-                        "showVisualizer": true,
-                        "visualizerType": "mirrored",
-                        "x": 47,
-                        "y": 936
-                    },
-                    {
                         "id": "Weather",
                         "roundedCorners": true,
-                        "scale": 1.5138309276622248,
+                        "scale": 1.3205550741379017,
                         "showBackground": true,
-                        "x": 54,
-                        "y": 784
+                        "x": 1410,
+                        "y": 107
                     },
                     {
                         "diskPath": "/",
@@ -498,7 +485,7 @@
         "allowPanelsOnScreenWithoutBar": true,
         "allowPasswordWithFprintd": false,
         "animationDisabled": false,
-        "animationSpeed": 1,
+        "animationSpeed": 0.9400000000000001,
         "autoStartAuth": false,
         "avatarImage": "/home/aryas/dotfiles/by dumbdelvon.jpg",
         "boxRadiusRatio": 1,
@@ -545,13 +532,13 @@
         ],
         "lockScreenTint": 0,
         "passwordChars": true,
-        "radiusRatio": 1,
+        "radiusRatio": 1.4000000000000001,
         "reverseScroll": false,
         "scaleRatio": 0.9500000000000001,
         "screenRadiusRatio": 1,
-        "shadowDirection": "bottom_right",
-        "shadowOffsetX": 2,
-        "shadowOffsetY": 3,
+        "shadowDirection": "center",
+        "shadowOffsetX": 0,
+        "shadowOffsetY": 0,
         "showChangelogOnStartup": true,
         "showHibernateOnLockScreen": false,
         "showScreenCorners": false,
@@ -809,13 +796,13 @@
         "fontDefaultScale": 0.95,
         "fontFixed": "JetBrainsMonoNL Nerd Font Mono",
         "fontFixedScale": 0.95,
-        "panelBackgroundOpacity": 0.98,
+        "panelBackgroundOpacity": 0.97,
         "panelsAttachedToBar": true,
         "scrollbarAlwaysVisible": true,
         "settingsPanelMode": "attached",
         "settingsPanelSideBarCardStyle": false,
         "tooltipsEnabled": true,
-        "translucentWidgets": false
+        "translucentWidgets": true
     },
     "wallpaper": {
         "automationEnabled": true,
