@@ -2,9 +2,9 @@ binds {
     // === System & Overview ===
     Mod+D repeat=false { toggle-overview; }
     Mod+Tab repeat=false { toggle-overview; }
-    Mod+Shift+Slash { show-hotkey-overlay; }
+    // Mod+Shift+Slash { show-hotkey-overlay; }
     // NOTE: No direct cycleoutput in Noctalia; mapped to muteOutput as closest alternative
-    Ctrl+F3 { spawn-sh "qs -c noctalia-shell ipc call volume muteOutput"; }
+    Ctrl+F3 { spawn-sh "~/dotfiles/Scripts/cycle-audio.sh"; }
     // Toggle Droidcam
     Mod+F12 { spawn-sh "pkill droidcam-cli || exec droidcam-cli 192.168.0.196 4747";}
 
@@ -95,6 +95,8 @@ binds {
     Mod+Shift+Right { move-column-right; }
     Mod+Shift+BracketLeft { move-column-left; }
     Mod+Shift+BracketRight { move-column-right; }
+    Mod+Shift+Apostrophe   { move-column-to-workspace-up; }
+    Mod+Shift+Slash        { move-column-to-workspace-down; }
     Mod+Shift+H     { move-column-left; }
     Mod+Shift+J     { move-window-down; }
     Mod+Shift+K     { move-window-up; }
@@ -205,7 +207,7 @@ binds {
     Ctrl+XF86Launch1 { screenshot-screen; }
     Alt+XF86Launch1 { screenshot-window; }
     // NOTE: dms screenshot replaced; use your preferred screenshot tool here
-    Mod+Shift+S { spawn-sh "dms screenshot"; }
+    Mod+Shift+S { screenshot; }
     Mod+Ctrl+Shift+S { spawn-sh "dms screenshot full"; }
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
