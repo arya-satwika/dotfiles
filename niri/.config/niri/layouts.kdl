@@ -1,8 +1,8 @@
 layout {
     gaps 8
     struts{
-        top 2
-        bottom 2
+        top 1
+        bottom 1
     }
     focus-ring{
         width 3
@@ -25,9 +25,9 @@ layer-rule {
 }
 window-rule{
     background-effect {
-    blur true
-    xray false
+        blur true
+        xray true
     }
     clip-to-geometry true
-    geometry-corner-radius 12
+    geometry-corner-radius 15
 }
