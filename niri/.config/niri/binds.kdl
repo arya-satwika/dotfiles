@@ -215,4 +215,5 @@ binds {
     // === Open Power Menu ===
     // NOTE: No built-in power menu in Noctalia core; use a plugin (plugin ID may differ)
     Mod+Shift+P { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
+    Alt+Grave { spawn-sh "qs -c noctalia-shell ipc call volume muteInput"; }
 }
