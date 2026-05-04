@@ -1,3 +1,5 @@
+MenuBar=Disabled
+
 [General]
 EditableUrl=true
 GlobalViewProps=false
@@ -8,7 +10,7 @@ ViewPropsTimestamp=2026,4,4,10,42,51.748
 
 [IconsMode]
 IconSize=16
-PreviewSize=96
+PreviewSize=112
 TextWidthIndex=0
 
 [KFileDialog Settings]

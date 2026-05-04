@@ -4,36 +4,40 @@ CropAdvancedSettingsEnabled=true
 [General]
 LastUsedVersion=210800
 SideBarPage=operations
+ThumbnailBarIsVisible=true
+
+[ImageView]
+ThumbnailSplitterSizes=719,205
 
 [MainWindow]
 MenuBar=Disabled
 
 [Recent Files]
-File1[$e]=/mnt/WDBlue/[Photos]/pbp thumb.png
-File10[$e]=/mnt/WDBlue/[Photos]/[artworks]/by nogisanart.jpg
-File2[$e]=$HOME/Pictures/Screenshots/screenshot_2026-03-18_05-39-14.png
-File3[$e]=/mnt/WDBlue/[Photos]/[artworks]/amity by omychan.jpg
-File4[$e]=$HOME/dotfiles/wallpapers/by andreas_rocha.jpg
-File5[$e]=$HOME/dotfiles/wallpapers/by gillianthreeG.jpg
-File6[$e]=/mnt/WDBlue/[Photos]/[artworks]/by keroo_p.jpg
-File7[$e]=/mnt/WDBlue/[Photos]/[artworks]/by fihableart.jpg
-File8[$e]=/mnt/WDBlue/[Photos]/[artworks]/by sunsetboy18.jpg
-File9[$e]=/mnt/WDBlue/[Photos]/[artworks]/by ARTekin0.jpg
-Name1[$e]=pbp thumb.png
-Name10[$e]=by nogisanart.jpg
-Name2[$e]=screenshot_2026-03-18_05-39-14.png
-Name3[$e]=amity by omychan.jpg
-Name4[$e]=by andreas_rocha.jpg
-Name5[$e]=by gillianthreeG.jpg
-Name6[$e]=by keroo_p.jpg
-Name7[$e]=by fihableart.jpg
-Name8[$e]=by sunsetboy18.jpg
-Name9[$e]=by ARTekin0.jpg
+File1[$e]=$HOME/Pictures/gowall/by axelstool.jpg
+File10[$e]=/mnt/WDBlue/[Photos]/memes/upset cuz smol.jpeg
+File2[$e]=$HOME/Pictures/gowall/by archdrawsalot.jpg
+File3[$e]=$HOME/Pictures/gowall/by gabbiepicasso_3.jpg
+File4[$e]=$HOME/Pictures/gowall/by gabbiecasso_4.png
+File5[$e]=$HOME/Pictures/gowall/by keroo_p.jpg
+File6[$e]=$HOME/Pictures/gowall/by l00king_9.jpg
+File7[$e]=$HOME/Pictures/gowall/by sunsetboy18.jpg
+File8[$e]=/mnt/WDBlue/[Photos]/memes/dex doesnt know pc.jpg
+File9[$e]=/mnt/WDBlue/[Photos]/memes/yaaaa cat.jpg
+Name1[$e]=by axelstool.jpg
+Name10[$e]=upset cuz smol.jpeg
+Name2[$e]=by archdrawsalot.jpg
+Name3[$e]=by gabbiepicasso_3.jpg
+Name4[$e]=by gabbiecasso_4.png
+Name5[$e]=by keroo_p.jpg
+Name6[$e]=by l00king_9.jpg
+Name7[$e]=by sunsetboy18.jpg
+Name8[$e]=dex doesnt know pc.jpg
+Name9[$e]=yaaaa cat.jpg
 
 [SideBar]
 InformationSplitterSizes=219,256
 IsVisible ViewMode=true
-SideBarSplitterSizes=222,725
+SideBarSplitterSizes=222,718
 
 [UiSettings]
 ColorScheme=noctalia
