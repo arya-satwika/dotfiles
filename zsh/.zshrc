@@ -92,7 +92,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 # Add fastfetch to terminal startup
 fastfetch
-
+eval "$(starship init zsh)"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -125,5 +125,7 @@ alias cls="clear"
 alias cfg="cd ~/.config"
 alias dotfiles="cd ~/dotfiles"
 alias resolve="QT_QPA_PLATFORM=xcb /opt/resolve/bin/resolve"
-eval "$(starship init zsh)"export PATH="/home/aryas/.local/bin:$PATH"
+
+export PATH="/home/aryas/.local/bin:$PATH"
 export PATH=$PATH:~/.spicetify
+autoload -U compinit; compinit

@@ -8,9 +8,7 @@ $directory\
 [](fg:#FFFAC2 bg:#5DE4C7)\
 $git_branch\
 $git_status\
-[](fg:#5DE4C7 bg:#89DDFF)\
-$time\
-[](fg:#89DDFF bg:transparent)\
+[](fg:#5DE4C7 bg:transparent)\
 \n$character"""
 
 [character]
@@ -29,12 +27,6 @@ format = "[ $path ]($style)"
 truncation_length = 1000
 truncation_symbol = "…/"
 
-[directory.substitutions]
-"Documents" = "󰈙 "
-"Downloads" = " "
-"Music" = " "
-"Pictures" = " "
-
 [git_branch]
 symbol = "\ueafe"
 style = "bold bg:#5DE4C7"
@@ -51,27 +43,3 @@ conflicted = " "
 up_to_date = " "
 untracked  = "? "
 modified   = " "
-stashed    = ""
-staged     = ""
-renamed    = ""
-deleted    = ""
-
-[nodejs]
-symbol = ""
-style = "bg:#1B212E"
-format = '[[ $symbol ($version) ](fg:#ffffff bg:#1B212E)]($style)'
-
-[rust]
-symbol = ""
-style = "bg:#1B212E"
-format = '[[ $symbol ($version) ](fg:#ffffff bg:#1B212E)]($style)'
-
-[golang]
-symbol = ""
-style = "bg:#1B212E"
-format = '[[ $symbol ($version) ](fg:#ffffff bg:#1B212E)]($style)'
-
-[php]
-symbol = ""
-style = "bg:#1B212E"
-format = '[[ $symbol ($version) ](fg:#ffffff bg:#1B212E)]($style)'
