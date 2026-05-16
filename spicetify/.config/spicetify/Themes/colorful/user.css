@@ -2,7 +2,7 @@
 .encore-dark-theme,
 .encore-base-set,
 .encore-inverted-light-set {
-  --background-highlight: rgba(var(--spice-rgb-highlight), 0.5) !important;
+  --background-highlight: rgba(var(--spice-rgb-highlight), 0.25) !important;
 }
 .main-nowPlayingBar-container {
   background-color: var(--background-base);

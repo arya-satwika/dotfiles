@@ -61,7 +61,7 @@ hotkey-overlay {
 
 animations {
     workspace-switch {
-        spring damping-ratio=0.80 stiffness=523 epsilon=0.0001
+        spring damping-ratio=0.90 stiffness=560 epsilon=0.00001
     }
     window-open {
         duration-ms 300
