@@ -12,7 +12,7 @@ binds {
     Mod+Space hotkey-overlay-title="Application Launcher" {
         spawn-sh "qs -c noctalia-shell ipc call launcher toggle";
     }
-    Mod+Return hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
+    Mod+Return hotkey-overlay-title="Open Terminal" { spawn-sh "kitty"; }
     Mod+T { spawn-sh "kitty -e btop"; }
     Mod+P { spawn-sh "kitty -e pacsea"; }
     Mod+N { spawn "code"; }
@@ -33,9 +33,11 @@ binds {
     Mod+Y hotkey-overlay-title="Browse Wallpapers" {
         spawn-sh "qs -c noctalia-shell ipc call wallpaper toggle";
     }
-    // NOTE: No built-in notepad panel in Noctalia core; use a plugin (plugin ID may differ)
-    Mod+Shift+N hotkey-overlay-title="Notepad" {
-        spawn-sh "qs -c noctalia-shell ipc call plugin:notepad toggle";
+    Mod+Shift+N hotkey-overlay-title="Pomodoro" {
+        spawn-sh "qs -c noctalia-shell ipc call plugin:pomodoro toggle";
+    }
+    Mod+Q hotkey-overlay-title="Screen toolkit" {
+        spawn-sh "qs -c noctalia-shell ipc call plugin:screen-toolkit toggle";
     }
 
     // === Security ===

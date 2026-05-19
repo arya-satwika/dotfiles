@@ -83,6 +83,7 @@ plugins=(
     eza 
     zsh-autosuggestions
     zsh-syntax-highlighting
+    fast-syntax-highlighting
     zsh-autocomplete
     zoxide
 )
