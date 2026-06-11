@@ -196,7 +196,7 @@ Rectangle {
                         y: clockContainer.cy + nRad * Math.sin(disp) - height/2
                         text: String(index).padStart(2, '0'); font.family: outfitFont.name; font.pixelSize: 16 * s; font.weight: spotlight > 0.5 ? Font.Bold : Font.Normal
                         color: isLight ? Qt.rgba(0, 0, 0, spotlight > 0 ? (0.6 + 0.4 * spotlight) : 0.6) : Qt.rgba(1, 0.98, 0.76, spotlight > 0 ? (0.4 + spotlight * 0.6) : 0.25)
-                        rotation: disp * 180 / Math.PI; transformOrigin: Item.Cente
+                        rotation: disp * 180 / Math.PI; transformOrigin: Item.Center
                     }
                 }
             }
