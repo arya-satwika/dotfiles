@@ -30,9 +30,9 @@ Rectangle {
     readonly property color subColor: isLight ? "#666666" : "#5BDEC3"
     readonly property color pillColor: isLight ? "#e8e8e8" : "#1B1E28"
     readonly property color pillBorder: isLight ? (root.isWindup ? "#aaaaaa" : "#cccccc") : (root.isWindup ? "#444" : "#AAD3FB")
-    readonly property color pillInnerLine: isLight ? (root.isWindup ? "#000000" : "#bbbbbb") : (root.isWindup ? "#ffffff" : "#222222")
+    readonly property color pillInnerLine: isLight ? (root.isWindup ? "#000000" : "#bbbbbb") : (root.isWindup ? "#0F1018" : "#222222")
     readonly property color sparkColor: isLight ? "#000000" : "#DCE7F3"
-    readonly property color blastColor: isLight ? "#000000" : "#DCE7F3"
+    readonly property color blastColor: isLight ? "#000000" : "#000000"
     readonly property color userItemInactive: isLight ? "#cccccc" : "#727899"
     readonly property color inputWaitColor: isLight ? "#bbbbbb" : "#0F1018"
 
