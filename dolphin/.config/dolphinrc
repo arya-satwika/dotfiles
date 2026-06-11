@@ -1,17 +1,24 @@
 MenuBar=Disabled
 
+[CompactMode]
+PreviewSize=96
+
+[ExtractDialog]
+1920x1080 screen: Height=1019
+1920x1080 screen: Width=941
+DirHistory[$e]=$HOME/repos
+
 [General]
-EditableUrl=true
 GlobalViewProps=false
 ShowFullPath=true
 ShowToolTips=true
+TerminalApplication=kitty
 Version=202
 ViewPropsTimestamp=2026,4,4,10,42,51.748
-TerminalApplication=kitty
 
 [IconsMode]
 IconSize=16
-PreviewSize=112
+PreviewSize=144
 TextWidthIndex=0
 
 [KFileDialog Settings]
@@ -22,7 +29,7 @@ Places Icons Static Size=22
 MenuBar=Disabled
 
 [PreviewSettings]
-Plugins=ffmpegthumbnailer,appimagethumbnail,audiothumbnail,glycin-heif,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,glycin-image-rs,jpegthumbnail,glycin-jxl,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,gsf-office,mobithumbnail,opendocumentthumbnail,gsthumbnail,rawthumbnail,glycin-svg,svgthumbnail,ffmpegthumbs,exe-thumbnailer
+Plugins=ffmpegthumbnailer,appimagethumbnail,audiothumbnail,glycin-heif,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,glycin-image-rs,jpegthumbnail,glycin-jxl,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mobithumbnail,opendocumentthumbnail,gsthumbnail,rawthumbnail,glycin-svg,svgthumbnail,ffmpegthumbs,gsf-office
 
 [UiSettings]
 ColorScheme=noctalia

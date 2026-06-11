@@ -13,26 +13,29 @@ ThumbnailSplitterSizes=719,205
 MenuBar=Disabled
 
 [Recent Files]
-File1[$e]=$HOME/Pictures/gowall/by axelstool.jpg
-File10[$e]=/mnt/WDBlue/[Photos]/memes/upset cuz smol.jpeg
-File2[$e]=$HOME/Pictures/gowall/by archdrawsalot.jpg
-File3[$e]=$HOME/Pictures/gowall/by gabbiepicasso_3.jpg
-File4[$e]=$HOME/Pictures/gowall/by gabbiecasso_4.png
-File5[$e]=$HOME/Pictures/gowall/by keroo_p.jpg
-File6[$e]=$HOME/Pictures/gowall/by l00king_9.jpg
-File7[$e]=$HOME/Pictures/gowall/by sunsetboy18.jpg
-File8[$e]=/mnt/WDBlue/[Photos]/memes/dex doesnt know pc.jpg
-File9[$e]=/mnt/WDBlue/[Photos]/memes/yaaaa cat.jpg
-Name1[$e]=by axelstool.jpg
-Name10[$e]=upset cuz smol.jpeg
-Name2[$e]=by archdrawsalot.jpg
-Name3[$e]=by gabbiepicasso_3.jpg
-Name4[$e]=by gabbiecasso_4.png
-Name5[$e]=by keroo_p.jpg
-Name6[$e]=by l00king_9.jpg
-Name7[$e]=by sunsetboy18.jpg
-Name8[$e]=dex doesnt know pc.jpg
-Name9[$e]=yaaaa cat.jpg
+File1[$e]=/mnt/WDBlue/SEKOLAH/UNESA/RPLDiagrams/CariMateriActivity.png
+File10[$e]=$HOME/repos/programming-lul/image/paper.2.jpeg
+File2[$e]=/mnt/WDBlue/[Photos]/memes/HYPERBouncinOnIt-4x.gif
+File3[$e]=/mnt/WDBlue/[Photos]/memes/only a slave quantifies existince through productivity.jpg
+File4[$e]=/mnt/WDBlue/[Photos]/memes/another blank to blank meme.png
+File5[$e]=/mnt/WDBlue/SEKOLAH/UNESA/RPLDiagrams/UseCaseDiagram1.png
+File6[$e]=/mnt/WDBlue/SEKOLAH/UNESA/RPLDiagrams/UploadMateriSequence.png
+File7[$e]=/mnt/WDBlue/SEKOLAH/UNESA/RPLDiagrams/png/Aplikasi Pengelola Materi!UseCaseDiagram1_0.png
+File8[$e]=/mnt/WDBlue/SEKOLAH/UNESA/RPLDiagrams/DFDDiagram1.png
+File9[$e]=/mnt/WDBlue/SEKOLAH/UNESA/tanda tangan.png
+Name1[$e]=CariMateriActivity.png
+Name10[$e]=paper.2.jpeg
+Name2[$e]=HYPERBouncinOnIt-4x.gif
+Name3[$e]=only a slave quantifies existince through productivity.jpg
+Name4[$e]=another blank to blank meme.png
+Name5[$e]=UseCaseDiagram1.png
+Name6[$e]=UploadMateriSequence.png
+Name7[$e]=Aplikasi Pengelola Materi!UseCaseDiagram1_0.png
+Name8[$e]=DFDDiagram1.png
+Name9[$e]=tanda tangan.png
+
+[RedEyeReduction]
+RedEyeReductionDiameter=99
 
 [SideBar]
 InformationSplitterSizes=219,256
