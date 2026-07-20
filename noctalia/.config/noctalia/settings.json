@@ -11,15 +11,15 @@
         "enableClipboardChips": true,
         "enableClipboardHistory": true,
         "enableClipboardSmartIcons": true,
-        "enableSessionSearch": true,
-        "enableSettingsSearch": true,
-        "enableWindowsSearch": true,
-        "iconMode": "tabler",
+        "enableSessionSearch": false,
+        "enableSettingsSearch": false,
+        "enableWindowsSearch": false,
+        "iconMode": "native",
         "ignoreMouseInput": false,
         "overviewLayer": false,
         "pinnedApps": [
         ],
-        "position": "follow_bar",
+        "position": "center",
         "screenshotAnnotationTool": "",
         "showCategories": false,
         "showIconBackground": true,
@@ -32,7 +32,7 @@
         ],
         "preferredPlayer": "Spotify",
         "spectrumFrameRate": 30,
-        "spectrumMirrored": true,
+        "spectrumMirrored": false,
         "visualizerType": "wave",
         "volumeFeedback": false,
         "volumeFeedbackSoundFile": "",
@@ -43,17 +43,17 @@
         "autoHideDelay": 500,
         "autoShowDelay": 150,
         "backgroundOpacity": 1,
-        "barType": "framed",
+        "barType": "simple",
         "capsuleColorKey": "primary",
-        "capsuleOpacity": 0.05,
-        "contentPadding": 3,
+        "capsuleOpacity": 0.08,
+        "contentPadding": 0,
         "density": "comfortable",
         "displayMode": "always_visible",
         "enableExclusionZoneInset": true,
-        "fontScale": 0.92,
-        "frameRadius": 13,
-        "frameThickness": 10,
-        "hideOnOverview": true,
+        "fontScale": 0.83,
+        "frameRadius": 12,
+        "frameThickness": 6,
+        "hideOnOverview": false,
         "marginHorizontal": 4,
         "marginVertical": 4,
         "middleClickAction": "settings",
@@ -64,7 +64,7 @@
         "mouseWheelAction": "workspace",
         "mouseWheelWrap": false,
         "outerCorners": true,
-        "position": "top",
+        "position": "right",
         "reverseScroll": false,
         "rightClickAction": "controlCenter",
         "rightClickCommand": "",
@@ -79,19 +79,52 @@
         "widgets": {
             "center": [
                 {
+                    "colorName": "secondary",
+                    "hideWhenIdle": false,
+                    "id": "AudioVisualizer",
+                    "width": 90
+                },
+                {
+                    "clockColor": "none",
+                    "customFont": "Roboto Mono Medium",
+                    "formatHorizontal": "MMM dd | HH:mm",
+                    "formatVertical": "HH mm - dd MM",
+                    "id": "Clock",
+                    "tooltipFormat": "dddd MMM dd",
+                    "useCustomFont": false
+                },
+                {
+                    "colorName": "secondary",
+                    "hideWhenIdle": false,
+                    "id": "AudioVisualizer",
+                    "width": 90
+                }
+            ],
+            "left": [
+                {
+                    "colorizeSystemIcon": "none",
+                    "colorizeSystemText": "none",
+                    "customIconPath": "",
+                    "enableColorization": true,
+                    "icon": "niri",
+                    "iconColor": "none",
+                    "id": "Launcher",
+                    "useDistroLogo": true
+                },
+                {
                     "characterCount": 2,
                     "colorizeIcons": false,
-                    "emptyColor": "none",
+                    "emptyColor": "primary",
                     "enableScrollWheel": true,
-                    "focusedColor": "primary",
+                    "focusedColor": "tertiary",
                     "followFocusedScreen": false,
                     "fontWeight": "regular",
-                    "groupedBorderOpacity": 1,
-                    "hideUnoccupied": false,
-                    "iconScale": 0.64,
+                    "groupedBorderOpacity": 0.63,
+                    "hideUnoccupied": true,
+                    "iconScale": 0.5,
                     "id": "Workspace",
                     "labelMode": "none",
-                    "occupiedColor": "none",
+                    "occupiedColor": "primary",
                     "pillSize": 0.45,
                     "showApplications": false,
                     "showApplicationsHover": false,
@@ -100,18 +133,9 @@
                     "unfocusedIconsOpacity": 1
                 },
                 {
-                    "clockColor": "none",
-                    "customFont": "",
-                    "formatHorizontal": "HH:mm | ddd, MMM dd",
-                    "formatVertical": "HH mm - dd MM",
-                    "id": "Clock",
-                    "tooltipFormat": "HH:mm ddd, MMM dd",
-                    "useCustomFont": false
-                },
-                {
                     "colorizeIcons": false,
                     "hideMode": "hidden",
-                    "iconScale": 0.65,
+                    "iconScale": 0.6,
                     "id": "Taskbar",
                     "maxTaskbarWidth": 40,
                     "onlyActiveWorkspaces": true,
@@ -120,96 +144,23 @@
                     "showTitle": false,
                     "smartWidth": true,
                     "titleWidth": 30
-                }
-            ],
-            "left": [
-                {
-                    "colorizeSystemIcon": "primary",
-                    "colorizeSystemText": "none",
-                    "customIconPath": "",
-                    "enableColorization": true,
-                    "icon": "rocket",
-                    "iconColor": "none",
-                    "id": "Launcher",
-                    "useDistroLogo": true
-                },
-                {
-                    "compactMode": false,
-                    "hideMode": "hidden",
-                    "hideWhenIdle": false,
-                    "id": "MediaMini",
-                    "maxWidth": 250,
-                    "panelShowAlbumArt": true,
-                    "scrollingMode": "always",
-                    "showAlbumArt": true,
-                    "showArtistFirst": false,
-                    "showProgressRing": true,
-                    "showVisualizer": true,
-                    "textColor": "none",
-                    "useFixedWidth": false,
-                    "visualizerType": "linear"
                 },
                 {
                     "defaultSettings": {
-                        "autoStartBreaks": false,
-                        "autoStartWork": false,
-                        "longBreakDuration": 15,
-                        "sessionsBeforeLongBreak": 4,
-                        "shortBreakDuration": 5,
-                        "workDuration": 25
                     },
-                    "id": "plugin:pomodoro"
-                },
-                {
-                    "defaultSettings": {
-                        "boldText": true,
-                        "checkCmd": "(checkupdates; paru -Qua) 2>/dev/null",
-                        "customIconPath": "",
-                        "desktopTip": true,
-                        "enableColorization": false,
-                        "flatpak": true,
-                        "hideOnEmpty": false,
-                        "iconColor": "none",
-                        "iconName": "arrow-big-down-lines",
-                        "noctalia": true,
-                        "refreshInterval": 120,
-                        "refreshTimer": true,
-                        "toast": true,
-                        "updateCmd": "ghostty -e bash -c 'echo \"Updating System...\";paru; flatpak update; read -n 1 -p \"Press any key to exit...\"'",
-                        "useDistroLogo": false
-                    },
-                    "id": "plugin:arch-updater"
-                },
-                {
-                    "defaultSettings": {
-                        "colorHistory": [
-                        ],
-                        "detectedCompositor": "",
-                        "detectedRecorder": "",
-                        "filenameFormat": "",
-                        "installedLangs": [
-                            "eng"
-                        ],
-                        "paletteColors": [
-                        ],
-                        "screenshotPath": "",
-                        "selectedOcrLang": "eng",
-                        "transAvailable": false,
-                        "videoPath": ""
-                    },
-                    "id": "plugin:screen-toolkit"
+                    "id": "plugin:better-music-widget"
                 }
             ],
             "right": [
                 {
                     "compactMode": false,
                     "diskPath": "/",
-                    "iconColor": "tertiary",
+                    "iconColor": "primary",
                     "id": "SystemMonitor",
                     "showCpuCores": false,
-                    "showCpuFreq": false,
+                    "showCpuFreq": true,
                     "showCpuTemp": true,
-                    "showCpuUsage": true,
+                    "showCpuUsage": false,
                     "showDiskAvailable": false,
                     "showDiskUsage": false,
                     "showDiskUsageAsPercent": false,
@@ -221,26 +172,7 @@
                     "showSwapUsage": false,
                     "textColor": "none",
                     "useMonospaceFont": true,
-                    "usePadding": true
-                },
-                {
-                    "blacklist": [
-                    ],
-                    "chevronColor": "none",
-                    "colorizeIcons": true,
-                    "drawerEnabled": true,
-                    "hidePassive": false,
-                    "id": "Tray",
-                    "pinned": [
-                    ]
-                },
-                {
-                    "hideWhenZero": false,
-                    "hideWhenZeroUnread": false,
-                    "iconColor": "secondary",
-                    "id": "NotificationHistory",
-                    "showUnreadBadge": true,
-                    "unreadBadgeColor": "error"
+                    "usePadding": false
                 },
                 {
                     "displayMode": "alwaysShow",
@@ -250,40 +182,40 @@
                     "textColor": "none"
                 },
                 {
-                    "defaultSettings": {
-                        "mode": "region"
-                    },
-                    "id": "plugin:screenshot"
+                    "displayMode": "onhover",
+                    "iconColor": "none",
+                    "id": "Microphone",
+                    "middleClickCommand": "pwvucontrol || pavucontrol",
+                    "textColor": "none"
                 },
                 {
-                    "defaultSettings": {
-                        "audioCodec": "opus",
-                        "audioSource": "default_output",
-                        "colorRange": "limited",
-                        "copyToClipboard": false,
-                        "customReplayDuration": "30",
-                        "directory": "",
-                        "filenamePattern": "recording_yyyyMMdd_HHmmss",
-                        "frameRate": "60",
-                        "hideInactive": false,
-                        "iconColor": "none",
-                        "quality": "very_high",
-                        "replayDuration": "30",
-                        "replayEnabled": false,
-                        "replayStorage": "ram",
-                        "resolution": "original",
-                        "restorePortalSession": false,
-                        "showCursor": true,
-                        "videoCodec": "h264",
-                        "videoSource": "portal"
-                    },
-                    "id": "plugin:screen-recorder"
+                    "blacklist": [
+                        "nm-applet"
+                    ],
+                    "chevronColor": "tertiary",
+                    "colorizeIcons": true,
+                    "drawerEnabled": true,
+                    "hidePassive": true,
+                    "id": "Tray",
+                    "pinned": [
+                        "SimpMusic"
+                    ]
                 },
                 {
-                    "defaultSettings": {
-                        "iconColor": "none"
-                    },
-                    "id": "plugin:color-scheme-creator"
+                    "compactMode": false,
+                    "hideMode": "hidden",
+                    "hideWhenIdle": false,
+                    "id": "MediaMini",
+                    "maxWidth": 190,
+                    "panelShowAlbumArt": true,
+                    "scrollingMode": "hover",
+                    "showAlbumArt": true,
+                    "showArtistFirst": false,
+                    "showProgressRing": true,
+                    "showVisualizer": false,
+                    "textColor": "none",
+                    "useFixedWidth": false,
+                    "visualizerType": "linear"
                 }
             ]
         }
@@ -313,7 +245,7 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "content",
+        "generationMethod": "tonal-spot",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
@@ -333,7 +265,7 @@
                 "id": "shortcuts-card"
             },
             {
-                "enabled": true,
+                "enabled": false,
                 "id": "audio-card"
             },
             {
@@ -361,6 +293,12 @@
                 },
                 {
                     "id": "NoctaliaPerformance"
+                },
+                {
+                    "defaultSettings": {
+                        "iconColor": "none"
+                    },
+                    "id": "plugin:color-scheme-creator"
                 }
             ],
             "right": [
@@ -368,80 +306,79 @@
                     "id": "Notifications"
                 },
                 {
-                    "id": "PowerProfile"
-                },
-                {
                     "id": "NightLight"
                 },
                 {
+                    "id": "PowerProfile"
+                },
+                {
                     "defaultSettings": {
-                        "desktopTip": true,
-                        "flatpak": true,
-                        "hideOnEmpty": false,
-                        "nameCmd": "(checkupdates; paru -Qua;) | awk '{print $1}'",
-                        "newVerCmd": "(checkupdates; paru -Qua;) | awk '{print $4}'",
-                        "noctalia": true,
-                        "oldVerCmd": "(checkupdates; paru -Qua;) | awk '{print $2}'",
-                        "refreshInterval": 120,
-                        "refreshTimer": true,
-                        "toast": true,
-                        "updateCmd": "ghostty -e bash -c 'echo \"Updating System...\";paru; flatpak update; read -n 1 -p \"Press any key to exit...\"'"
+                        "audioCodec": "opus",
+                        "audioSource": "default_output",
+                        "colorRange": "limited",
+                        "copyToClipboard": false,
+                        "customReplayDuration": "30",
+                        "directory": "",
+                        "filenamePattern": "recording_yyyyMMdd_HHmmss",
+                        "frameRate": "60",
+                        "hideInactive": false,
+                        "iconColor": "none",
+                        "quality": "very_high",
+                        "replayDuration": "30",
+                        "replayEnabled": false,
+                        "replayStorage": "ram",
+                        "resolution": "original",
+                        "restorePortalSession": false,
+                        "showCursor": true,
+                        "videoCodec": "h264",
+                        "videoSource": "portal"
                     },
-                    "id": "plugin:arch-updater"
+                    "id": "plugin:screen-recorder"
                 }
             ]
         }
     },
     "desktopWidgets": {
         "enabled": true,
-        "gridSnap": false,
-        "gridSnapScale": false,
+        "gridSnap": true,
+        "gridSnapScale": true,
         "monitorWidgets": [
             {
                 "name": "DP-1",
                 "widgets": [
                     {
-                        "clockColor": "none",
-                        "clockStyle": "binary",
-                        "customFont": "",
-                        "format": "HH:mm\\nd MMMM yyyy",
-                        "id": "Clock",
-                        "roundedCorners": true,
-                        "scale": 1.4242640687119286,
-                        "showBackground": true,
-                        "useCustomFont": false,
-                        "x": 1529,
-                        "y": 767
-                    },
-                    {
-                        "diskPath": "/",
-                        "id": "SystemStat",
-                        "layout": "side",
-                        "roundedCorners": true,
+                        "backgroundOpacity": 0.87,
+                        "dateStyle": "bubble",
+                        "defaultSettings": {
+                            "backgroundOpacity": 1,
+                            "dateStyle": "bubble",
+                            "dialStyle": "dots",
+                            "hourHandStyle": "fill",
+                            "minuteHandStyle": "medium",
+                            "secondHandStyle": "dot",
+                            "showHourMarks": false,
+                            "showSeconds": true,
+                            "sides": 9
+                        },
+                        "dialStyle": "numbers",
+                        "hourHandStyle": "fill",
+                        "id": "plugin:cookie-clock",
+                        "minuteHandStyle": "medium",
                         "scale": 1,
+                        "secondHandStyle": "dot",
                         "showBackground": true,
-                        "statType": "CPU",
-                        "x": 240,
-                        "y": 100
+                        "showHourMarks": false,
+                        "showSeconds": true,
+                        "sides": 9,
+                        "x": 1500,
+                        "y": 40
                     },
                     {
                         "id": "Weather",
                         "roundedCorners": true,
-                        "scale": 1.3205550741379017,
                         "showBackground": true,
-                        "x": 1410,
-                        "y": 107
-                    },
-                    {
-                        "diskPath": "/",
-                        "id": "SystemStat",
-                        "layout": "bottom",
-                        "roundedCorners": true,
-                        "scale": 1,
-                        "showBackground": true,
-                        "statType": "GPU",
-                        "x": 241,
-                        "y": 236
+                        "x": 80,
+                        "y": 920
                     }
                 ]
             }
@@ -453,8 +390,8 @@
         "backgroundOpacity": 1,
         "colorizeIcons": true,
         "deadOpacity": 0.6,
-        "displayMode": "auto_hide",
-        "dockType": "attached",
+        "displayMode": "always_visible",
+        "dockType": "floating",
         "enabled": false,
         "floatingRatio": 1,
         "groupApps": false,
@@ -485,7 +422,7 @@
         "allowPanelsOnScreenWithoutBar": true,
         "allowPasswordWithFprintd": false,
         "animationDisabled": false,
-        "animationSpeed": 0.9400000000000001,
+        "animationSpeed": 0.85,
         "autoStartAuth": false,
         "avatarImage": "/home/aryas/dotfiles/by dumbdelvon.jpg",
         "boxRadiusRatio": 1,
@@ -497,7 +434,7 @@
         "enableLockScreenCountdown": true,
         "enableLockScreenMediaControls": false,
         "enableShadows": false,
-        "forceBlackScreenCorners": false,
+        "forceBlackScreenCorners": true,
         "iRadiusRatio": 1,
         "keybinds": {
             "keyDown": [
@@ -525,14 +462,14 @@
         },
         "language": "",
         "lockOnSuspend": true,
-        "lockScreenAnimations": false,
+        "lockScreenAnimations": true,
         "lockScreenBlur": 0,
         "lockScreenCountdownDuration": 6000,
         "lockScreenMonitors": [
         ],
         "lockScreenTint": 0,
         "passwordChars": true,
-        "radiusRatio": 1.4000000000000001,
+        "radiusRatio": 1,
         "reverseScroll": false,
         "scaleRatio": 0.9500000000000001,
         "screenRadiusRatio": 1,
@@ -578,14 +515,14 @@
         "firstDayOfWeek": -1,
         "hideWeatherCityName": true,
         "hideWeatherTimezone": false,
-        "name": "Gayungan",
+        "name": "Surabaya",
         "showCalendarEvents": true,
         "showCalendarWeather": true,
         "showWeekNumberInCalendar": true,
         "use12hourFormat": false,
         "useFahrenheit": false,
         "weatherEnabled": true,
-        "weatherShowEffects": true,
+        "weatherShowEffects": false,
         "weatherTaliaMascotAlways": false
     },
     "network": {
@@ -601,18 +538,18 @@
     "nightLight": {
         "autoSchedule": true,
         "dayTemp": "6500",
-        "enabled": false,
+        "enabled": true,
         "forced": false,
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
-        "nightTemp": "4000"
+        "nightTemp": "4842"
     },
     "noctaliaPerformance": {
         "disableDesktopWidgets": true,
         "disableWallpaper": true
     },
     "notifications": {
-        "backgroundOpacity": 1,
+        "backgroundOpacity": 0.9,
         "clearDismissed": true,
         "criticalUrgencyDuration": 15,
         "density": "default",
@@ -621,9 +558,10 @@
         "enableMarkdown": true,
         "enableMediaToast": false,
         "enabled": true,
-        "location": "top_right",
+        "location": "top_left",
         "lowUrgencyDuration": 4,
         "monitors": [
+            "DP-1"
         ],
         "normalUrgencyDuration": 6,
         "overlayLayer": true,
@@ -653,7 +591,7 @@
             2,
             3
         ],
-        "location": "top",
+        "location": "right",
         "monitors": [
         ],
         "overlayLayer": true
@@ -663,12 +601,19 @@
         "notifyUpdates": true
     },
     "sessionMenu": {
-        "countdownDuration": 5000,
+        "countdownDuration": 3000,
         "enableCountdown": true,
-        "largeButtonsLayout": "single-row",
+        "largeButtonsLayout": "grid",
         "largeButtonsStyle": true,
         "position": "center",
         "powerOptions": [
+            {
+                "action": "hibernate",
+                "command": "",
+                "countdownEnabled": false,
+                "enabled": false,
+                "keybind": ""
+            },
             {
                 "action": "lock",
                 "command": "",
@@ -677,57 +622,50 @@
                 "keybind": "1"
             },
             {
-                "action": "suspend",
+                "action": "reboot",
                 "command": "",
                 "countdownEnabled": true,
                 "enabled": true,
                 "keybind": "2"
             },
             {
-                "action": "hibernate",
+                "action": "suspend",
                 "command": "",
-                "countdownEnabled": true,
+                "countdownEnabled": false,
                 "enabled": true,
                 "keybind": "3"
             },
             {
-                "action": "reboot",
-                "command": "",
-                "countdownEnabled": true,
-                "enabled": true,
-                "keybind": "4"
-            },
-            {
                 "action": "logout",
                 "command": "",
-                "countdownEnabled": true,
+                "countdownEnabled": false,
                 "enabled": true,
-                "keybind": "5"
+                "keybind": "4"
             },
             {
                 "action": "shutdown",
                 "command": "",
                 "countdownEnabled": true,
                 "enabled": true,
-                "keybind": "6"
+                "keybind": "5"
             },
             {
                 "action": "rebootToUefi",
                 "command": "",
                 "countdownEnabled": true,
                 "enabled": true,
-                "keybind": "7"
+                "keybind": "6"
             },
             {
                 "action": "userspaceReboot",
                 "command": "",
                 "countdownEnabled": true,
-                "enabled": true,
-                "keybind": "8"
+                "enabled": false,
+                "keybind": ""
             }
         ],
         "showHeader": true,
-        "showKeybinds": true
+        "showKeybinds": false
     },
     "settingsVersion": 59,
     "systemMonitor": {
@@ -761,10 +699,6 @@
             },
             {
                 "enabled": true,
-                "id": "gtk"
-            },
-            {
-                "enabled": true,
                 "id": "qt"
             },
             {
@@ -773,7 +707,11 @@
             },
             {
                 "enabled": true,
-                "id": "kcolorscheme"
+                "id": "spicetify"
+            },
+            {
+                "enabled": true,
+                "id": "discord"
             },
             {
                 "enabled": true,
@@ -781,28 +719,32 @@
             },
             {
                 "enabled": true,
-                "id": "spicetify"
+                "id": "steam"
             },
             {
                 "enabled": true,
-                "id": "discord"
+                "id": "kcolorscheme"
+            },
+            {
+                "enabled": true,
+                "id": "gtk"
             }
         ],
         "enableUserTheming": true
     },
     "ui": {
         "boxBorderEnabled": true,
-        "fontDefault": "Okta Neue SemiBold",
+        "fontDefault": "Okta Neue Medium",
         "fontDefaultScale": 0.95,
-        "fontFixed": "JetBrainsMonoNL Nerd Font Mono",
+        "fontFixed": "JetBrains Mono Medium",
         "fontFixedScale": 0.95,
-        "panelBackgroundOpacity": 0.97,
+        "panelBackgroundOpacity": 1,
         "panelsAttachedToBar": true,
         "scrollbarAlwaysVisible": true,
         "settingsPanelMode": "attached",
         "settingsPanelSideBarCardStyle": false,
         "tooltipsEnabled": true,
-        "translucentWidgets": true
+        "translucentWidgets": false
     },
     "wallpaper": {
         "automationEnabled": true,

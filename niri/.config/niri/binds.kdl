@@ -2,7 +2,6 @@ binds {
     // === System & Overview ===
     Mod+D repeat=false { toggle-overview; }
     Mod+Tab repeat=false { toggle-overview; }
-    // Mod+Shift+Slash { show-hotkey-overlay; }
     // NOTE: No direct cycleoutput in Noctalia; mapped to muteOutput as closest alternative
     Ctrl+F3 { spawn-sh "~/dotfiles/Scripts/cycle-audio.sh"; }
     // Toggle Droidcam
@@ -14,7 +13,7 @@ binds {
     }
     Mod+Return hotkey-overlay-title="Open Terminal" { spawn-sh "kitty"; }
     Mod+T { spawn-sh "kitty -e btop"; }
-    Mod+P { spawn-sh "kitty -e pacsea"; }
+    Mod+Shift+I { spawn-sh "kitty -e pacsea"; }
     Mod+N { spawn "code"; }
     Mod+E { spawn "dolphin"; }
     Mod+B { spawn "helium-browser"; }
@@ -24,33 +23,28 @@ binds {
         spawn-sh "qs -c noctalia-shell ipc call launcher clipboard";
     }
     // NOTE: No built-in process list panel in Noctalia core; use a plugin (plugin ID may differ)
-    Mod+M hotkey-overlay-title="Task Manager" {
-        spawn-sh "qs -c noctalia-shell ipc call plugin:processlist toggle";
+    Mod+M hotkey-overlay-title="pear-desktop" {
+        spawn "pear-desktop";
     }
     Mod+Comma hotkey-overlay-title="Settings" {
         spawn-sh "qs -c noctalia-shell ipc call settings toggle";
     }
     Mod+Y hotkey-overlay-title="Browse Wallpapers" {
-        spawn-sh "qs -c noctalia-shell ipc call wallpaper toggle";
-    }
-    Mod+Shift+N hotkey-overlay-title="Pomodoro" {
-        spawn-sh "qs -c noctalia-shell ipc call plugin:pomodoro toggle";
+        spawn-sh "qs -c noctalia-shell ipc call plugin:wallcards toggle";
     }
     Mod+Q hotkey-overlay-title="Screen toolkit" {
         spawn-sh "qs -c noctalia-shell ipc call plugin:screen-toolkit toggle";
+    }
+    Mod+P hotkey-overlay-title="pomodoro" {
+        spawn-sh "qs -c noctalia-shell ipc call plugin:pomodoro toggle";
     }
 
     // === Security ===
     Mod+Alt+L hotkey-overlay-title="Lock Screen" {
         spawn-sh "qs -c noctalia-shell ipc call lockScreen lock";
     }
-    Mod+Shift+E { quit; }
-    // NOTE: No built-in process list panel in Noctalia core; use a plugin (plugin ID may differ)
-    Ctrl+Alt+Delete hotkey-overlay-title="Task Manager" {
-        spawn-sh "qs -c noctalia-shell ipc call plugin:processlist toggle";
-    }
 
-    // === Audio Controls ===
+     // === Audio Controls ===
     XF86AudioRaiseVolume allow-when-locked=true {
         spawn-sh "qs -c noctalia-shell ipc call volume increase";
     }
@@ -80,15 +74,13 @@ binds {
     Mod+Shift+V { switch-focus-between-floating-and-tiling; }
 
     // === Focus Navigation ===
+    Mod+BracketLeft { focus-column-left; }
+    Mod+BracketRight { focus-column-right; }
     Mod+Left  { focus-column-left; }
     Mod+Down  { focus-window-down; }
     Mod+Up    { focus-window-up; }
     Mod+Right { focus-column-right; }
 
-    Mod+H     { focus-column-left; }
-    Mod+J     { focus-window-down; }
-    Mod+K     { focus-window-up; }
-    Mod+L     { focus-column-right; }
 
     // === Window Movement ===
     Mod+Shift+Left  { move-column-left; }
@@ -99,10 +91,6 @@ binds {
     Mod+Shift+BracketRight { move-column-right; }
     Mod+Shift+Apostrophe   { move-column-to-workspace-up; }
     Mod+Shift+Slash        { move-column-to-workspace-down; }
-    Mod+Shift+H     { move-column-left; }
-    Mod+Shift+J     { move-window-down; }
-    Mod+Shift+K     { move-window-up; }
-    Mod+Shift+L     { move-column-right; }
 
     // === Column Navigation ===
     Mod+Home { focus-column-first; }
@@ -112,8 +100,6 @@ binds {
 
     // === Monitor Navigation ===
     Mod+Ctrl+Left  { focus-monitor-left; }
-    Mod+BracketLeft { focus-column-left; }
-    Mod+BracketRight { focus-column-right; }
     Mod+Ctrl+Right { focus-monitor-right; }
     Mod+Ctrl+H     { focus-monitor-left; }
     Mod+Ctrl+J     { focus-monitor-down; }
@@ -133,8 +119,8 @@ binds {
     // === Workspace Navigation ===
     Mod+Page_Down      { focus-workspace-down; }
     Mod+Page_Up        { focus-workspace-up; }
-    Mod+U              { focus-workspace-down; }
-    Mod+I              { focus-workspace-up; }
+    // Mod+U              { focus-workspace-down; }
+    // Mod+I              { focus-workspace-up; }
     Mod+Apostrophe     { focus-workspace-up; }
     Mod+Slash          { focus-workspace-down; }
     Mod+Ctrl+Down { move-column-to-workspace-down; }
@@ -145,8 +131,8 @@ binds {
     // === Move Workspaces ===
     Mod+Shift+Page_Down { move-workspace-down; }
     Mod+Shift+Page_Up   { move-workspace-up; }
-    Mod+Shift+U         { move-workspace-down; }
-    Mod+Shift+I         { move-workspace-up; }
+    // Mod+Shift+U         { move-workspace-down; }
+    // Mod+Shift+I         { move-workspace-up; }
 
     // === Mouse Wheel Navigation ===
     Mod+WheelScrollDown cooldown-ms=60   { focus-workspace-down; }
@@ -210,7 +196,6 @@ binds {
     Alt+XF86Launch1 { screenshot-window; }
     // NOTE: dms screenshot replaced; use your preferred screenshot tool here
     Mod+Shift+S { screenshot; }
-    Mod+Ctrl+Shift+S { spawn-sh "dms screenshot full"; }
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
 
