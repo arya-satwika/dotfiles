@@ -74,7 +74,7 @@
         "showCapsule": true,
         "showOnWorkspaceSwitch": true,
         "showOutline": false,
-        "useSeparateOpacity": false,
+        "useSeparateOpacity": true,
         "widgetSpacing": 6,
         "widgets": {
             "center": [
@@ -102,14 +102,8 @@
             ],
             "left": [
                 {
-                    "colorizeSystemIcon": "none",
-                    "colorizeSystemText": "none",
-                    "customIconPath": "",
-                    "enableColorization": true,
-                    "icon": "niri",
                     "iconColor": "none",
-                    "id": "Launcher",
-                    "useDistroLogo": true
+                    "id": "PowerProfile"
                 },
                 {
                     "characterCount": 2,
@@ -435,7 +429,7 @@
         "enableLockScreenMediaControls": false,
         "enableShadows": false,
         "forceBlackScreenCorners": true,
-        "iRadiusRatio": 1,
+        "iRadiusRatio": 0.9,
         "keybinds": {
             "keyDown": [
                 "Down"
@@ -723,11 +717,11 @@
             },
             {
                 "enabled": true,
-                "id": "kcolorscheme"
+                "id": "gtk"
             },
             {
                 "enabled": true,
-                "id": "gtk"
+                "id": "kcolorscheme"
             }
         ],
         "enableUserTheming": true
@@ -744,7 +738,7 @@
         "settingsPanelMode": "attached",
         "settingsPanelSideBarCardStyle": false,
         "tooltipsEnabled": true,
-        "translucentWidgets": false
+        "translucentWidgets": true
     },
     "wallpaper": {
         "automationEnabled": true,
@@ -762,20 +756,20 @@
         "overviewBlur": 0.4,
         "overviewEnabled": false,
         "overviewTint": 0.6,
-        "panelPosition": "center",
+        "panelPosition": "follow_bar",
         "randomIntervalSec": 11400,
         "setWallpaperOnAllMonitors": true,
         "showHiddenFiles": false,
-        "skipStartupTransition": false,
+        "skipStartupTransition": true,
         "solidColor": "#1a1a2e",
         "sortOrder": "name",
-        "transitionDuration": 1300,
-        "transitionEdgeSmoothness": 0.17,
+        "transitionDuration": 1100,
+        "transitionEdgeSmoothness": 0.04,
         "transitionType": [
-            "fade",
             "disc",
             "stripes",
-            "wipe"
+            "wipe",
+            "honeycomb"
         ],
         "useOriginalImages": false,
         "useSolidColor": false,

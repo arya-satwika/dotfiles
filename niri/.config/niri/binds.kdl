@@ -30,7 +30,7 @@ binds {
         spawn-sh "qs -c noctalia-shell ipc call settings toggle";
     }
     Mod+Y hotkey-overlay-title="Browse Wallpapers" {
-        spawn-sh "qs -c noctalia-shell ipc call plugin:wallcards toggle";
+        spawn-sh "qs -c noctalia-shell ipc call wallpaper toggle";
     }
     Mod+Q hotkey-overlay-title="Screen toolkit" {
         spawn-sh "qs -c noctalia-shell ipc call plugin:screen-toolkit toggle";

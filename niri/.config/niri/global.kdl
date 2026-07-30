@@ -33,7 +33,7 @@ spawn-at-startup "qs" "-c" "noctalia-shell"
 
 spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
 
-spawn-at-startup "elecwhat"
+spawn-at-startup "whatkevr"
 spawn-at-startup "/opt/zen-browser-bin/zen-bin"
 
 environment {
@@ -139,6 +139,11 @@ window-rule {
 }
 
 window-rule {
+    match app-id="steam"
+    open-focused false
+}
+
+window-rule {
     match app-id="Minecraft"
     open-maximized true
 }
@@ -148,9 +153,9 @@ window-rule {
     default-floating-position x=10 y=10 relative-to="bottom-right"
 }
 
-
 window-rule {
     match app-id="elecwhat"
+    match app-id="in.codelif.Whatevr"
     match app-id="vesktop"
     open-on-workspace "socials"
     block-out-from "screencast"
