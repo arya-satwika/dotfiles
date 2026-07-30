@@ -1,7 +1,11 @@
-# vesktop/.config/vesktop/Crashpad/*
+w # vesktop/.config/vesktop/Crashpad/*
 # vesktop/.config/vesktop/sessionData/*
 # vesktop/.config/vesktop/SingletonCookie
 # vesktop/.config/vesktop/SingletionLock
 # vesktop/.config/vesktop/SingletonSocket
 vesktop/.config/vesktop/themes/dank-discord.css
-dms/.config/DankMaterialShell/settings.json
+dms/.config/DankMaterialShell/firefox.css
+dms/.config/DankMaterialShell/zen.css
+dms/.config/DankMaterialShell/themes
+dms/.config/DankMaterialShell/plugins
+/dms/.config/DankMaterialShell/firefox.css

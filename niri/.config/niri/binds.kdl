@@ -1,36 +1,38 @@
 binds {
-    // === System & Overview ===
-    Mod+D repeat=false { toggle-overview; }
-    Mod+Tab repeat=false { toggle-overview; }
-    // NOTE: No direct cycleoutput in Noctalia; mapped to muteOutput as closest alternative
-    Ctrl+F3 { spawn-sh "~/dotfiles/Scripts/cycle-audio.sh"; }
-    // Toggle Droidcam
-    Mod+F12 { spawn-sh "pkill droidcam-cli || exec droidcam-cli 192.168.0.196 4747";}
 
-    // === Application Launchers ===
-    Mod+Space hotkey-overlay-title="Application Launcher" {
-        spawn-sh "qs -c noctalia-shell ipc call launcher toggle";
-    }
-    Mod+Return hotkey-overlay-title="Open Terminal" { spawn-sh "kitty"; }
+    // APP SHORTCUTS
     Mod+T { spawn-sh "kitty -e btop"; }
     Mod+Shift+I { spawn-sh "kitty -e pacsea"; }
     Mod+N { spawn "code"; }
     Mod+E { spawn "dolphin"; }
     Mod+B { spawn "helium-browser"; }
+    Mod+Return { spawn-sh "kitty"; }
+    Mod+M { spawn "pear-desktop"; }
+    // Toggle Droidcam
+    Mod+F12 { spawn-sh "pkill droidcam-cli || exec droidcam-cli 192.168.0.196 4747";}
 
-    // NOTE: No built-in clipboard panel in Noctalia core; use a plugin (plugin ID may differ)
-    Mod+V hotkey-overlay-title="Clipboard Manager" {
-        spawn-sh "qs -c noctalia-shell ipc call launcher clipboard";
+
+    // NOTE: No direct cycleoutput in Noctalia; mapped to muteOutput as closest alternative
+    Ctrl+F3 { spawn-sh "~/dotfiles/Scripts/cycle-audio.sh"; }
+
+
+
+    // === Application Launchers ===
+    Mod+Space hotkey-overlay-title="Application Launcher" {
+        spawn-sh "dms ipc call spotlight toggle";
     }
-    // NOTE: No built-in process list panel in Noctalia core; use a plugin (plugin ID may differ)
-    Mod+M hotkey-overlay-title="pear-desktop" {
-        spawn "pear-desktop";
+    // === Open Power Menu ===
+    Mod+Shift+P { spawn-sh "dms ipc call powermenu toggle"; }
+    Alt+Grave { spawn-sh "dms ipc call mic mute"; }
+
+    Mod+V hotkey-overlay-title="Clipboard Manager" {
+        spawn-sh "dms ipc call clipboard toggle";
     }
     Mod+Comma hotkey-overlay-title="Settings" {
-        spawn-sh "qs -c noctalia-shell ipc call settings toggle";
+        spawn-sh "dms ipc call settings toggle";
     }
     Mod+Y hotkey-overlay-title="Browse Wallpapers" {
-        spawn-sh "qs -c noctalia-shell ipc call wallpaper toggle";
+        spawn-sh "dms ipc call dankdash wallpaper";
     }
     Mod+Q hotkey-overlay-title="Screen toolkit" {
         spawn-sh "qs -c noctalia-shell ipc call plugin:screen-toolkit toggle";
@@ -38,34 +40,22 @@ binds {
     Mod+P hotkey-overlay-title="pomodoro" {
         spawn-sh "qs -c noctalia-shell ipc call plugin:pomodoro toggle";
     }
-
     // === Security ===
     Mod+Alt+L hotkey-overlay-title="Lock Screen" {
-        spawn-sh "qs -c noctalia-shell ipc call lockScreen lock";
+        spawn-sh "dms ipc call lock lock";
     }
 
-     // === Audio Controls ===
-    XF86AudioRaiseVolume allow-when-locked=true {
-        spawn-sh "qs -c noctalia-shell ipc call volume increase";
-    }
-    XF86AudioLowerVolume allow-when-locked=true {
-        spawn-sh "qs -c noctalia-shell ipc call volume decrease";
-    }
-    XF86AudioMute allow-when-locked=true {
-        spawn-sh "qs -c noctalia-shell ipc call volume muteOutput";
-    }
-    XF86AudioMicMute allow-when-locked=true {
-        spawn-sh "qs -c noctalia-shell ipc call volume muteInput";
-    }
+     // === Audio & Brightness ===
+    XF86AudioRaiseVolume { spawn-sh "dms ipc call audio increment 5"; }
+    XF86AudioLowerVolume { spawn-sh "dms ipc call audio decrement 5"; }
+    XF86AudioMute { spawn-sh "dms ipc call audio mute"; }
+    XF86MonBrightnessUp { spawn-sh "dms ipc call brightness increment 10"; }
+    XF86MonBrightnessDown { spawn-sh "dms ipc call brightness decrement 10"; }
 
-    // === Brightness Controls ===
-    XF86MonBrightnessUp allow-when-locked=true {
-        spawn-sh "qs -c noctalia-shell ipc call brightness increase";
-    }
-    XF86MonBrightnessDown allow-when-locked=true {
-        spawn-sh "qs -c noctalia-shell ipc call brightness decrease";
-    }
 
+
+    // === System & Overview ===
+    Mod+Tab repeat=false { toggle-overview; }
     // === Window Management ===
     Mod+W repeat=false { close-window; }
     Mod+F { maximize-column; }
@@ -194,13 +184,9 @@ binds {
     XF86Launch1 { screenshot; }
     Ctrl+XF86Launch1 { screenshot-screen; }
     Alt+XF86Launch1 { screenshot-window; }
-    // NOTE: dms screenshot replaced; use your preferred screenshot tool here
     Mod+Shift+S { screenshot; }
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
 
-    // === Open Power Menu ===
-    // NOTE: No built-in power menu in Noctalia core; use a plugin (plugin ID may differ)
-    Mod+Shift+P { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
-    Alt+Grave { spawn-sh "qs -c noctalia-shell ipc call volume muteInput"; }
+
 }

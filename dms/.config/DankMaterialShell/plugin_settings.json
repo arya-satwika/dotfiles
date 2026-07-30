@@ -1,0 +1,55 @@
+{
+  "systemMonitorPlus": {
+    "enabled": true,
+    "cpuUsageEnabled": false,
+    "cpuUsageVisualStyle": "gauge",
+    "cpuTempEnabled": true,
+    "cpuTempVisualStyle": "gauge",
+    "cpuTempShowIcon": true,
+    "gpuTempEnabled": true,
+    "gpuTempVisualStyle": "gauge",
+    "resourceOrder": "cpuUsage,cpuTemp,gpuTemp,ramUsage,diskPartitionUsage,networkSpeed",
+    "ramUsageEnabled": true,
+    "ramUsageTextMode": "percentage",
+    "ramUsageVisualStyle": "default",
+    "ramUsageShowIcon": true,
+    "ramUsageFixedTextWidth": true,
+    "ramUsageShowText": true,
+    "ramUsageColorizeText": false,
+    "ramUsageCustomTemplate": "{usedGB}",
+    "ramUsageUseValueColors": true
+  },
+  "mediaControlPlus": {
+    "enabled": true
+  },
+  "materialPlayer": {
+    "enabled": true
+  },
+  "dankPomodoroTimer": {
+    "enabled": true
+  },
+  "splayerLyrics": {
+    "enabled": true
+  },
+  "unifiedTaskbar": {
+    "enabled": true
+  },
+  "dankKDEConnect": {
+    "enabled": true,
+    "selectedDeviceId": "de54dc544fec4e94885a2849f3687a50"
+  },
+  "powerControl": {
+    "enabled": true
+  },
+  "calculator": {
+    "enabled": true,
+    "trigger": "="
+  },
+  "dankBitwarden": {
+    "enabled": true,
+    "trigger": "[",
+    "noTrigger": false,
+    "identityAction": "copy:passport",
+    "loginAction": "autotype"
+  }
+}
