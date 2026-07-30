@@ -4,15 +4,15 @@ Rice / Theme is based off the [poimandres](https://github.com/drcmda/poimandres-
 ## Wallpapers
 all wallpapers in this repo are from artists on twitter, you can find their twitter by looking at the file name of the image, 
 `by 'twitterHandle'.jpg`
-## Stow
-dotfiles are organized to work with GNU Stow, to apply configs run this command 
+## Usage
+dotfiles are organized to work with **GNU Stow**, to apply configs run this command 
 ```bash
 cd ~
-stow vesktop #replace vesktop with name of app config that u want
+stow vesktop niri kitty zsh ohmyzsh noctalia fastfetch
 ```
 ## Other Repos used
 - [omarchy pmndrs](https://github.com/leweyse/omarchy-pmndrs-theme/)
-- [sddm astronaut theme](https://github.com/Keyitdev/sddm-astronaut-theme)
+- [qylock](https://github.com/Darkkal44/qylock)
 - [lucidglyph](https://github.com/maximilionus/lucidglyph)
 
 ## Fonts, Icons, and Cursor used
