@@ -1,0 +1,127 @@
+output "DP-1" {
+    mode "1920x1080@165.001"
+    scale 1.0
+
+    transform "normal"
+
+    position x=0 y=0
+}
+
+output "eDP-1" {
+    mode "1920x1200@60.001"
+    scale 1.1
+
+    transform "normal"
+
+    position x=0 y=0
+}
+
+prefer-no-csd
+gestures {
+    hot-corners {
+        off
+    }
+}
+
+input {
+    focus-follows-mouse max-scroll-amount="10%"
+    disable-power-key-handling
+    keyboard {
+        xkb {
+        }
+        numlock
+    }
+    touchpad {
+        tap
+        natural-scroll
+    }
+    mouse {
+        accel-profile "flat"
+    }
+    trackpoint {
+    }
+}
+
+cursor {
+    xcursor-theme "Posy_Cursor_125_175"
+    xcursor-size 32
+}
+
+
+layout {
+    background-color "transparent"
+    struts {
+        top 4
+        bottom 4
+    }
+}
+layer-rule {
+    match namespace="^quickshell$"
+    place-within-backdrop true
+}
+overview {
+    workspace-shadow {
+        off
+    }
+}
+
+
+spawn-at-startup "vesktop"
+// spawn-at-startup "pear-desktop"
+spawn-at-startup "spotify"
+
+// to make dolphin's app picker work on niri
+spawn-at-startup "dbus-update-activation-environment" "--systemd" "XDG_MENU_PREFIX=arch-"
+
+
+
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
+
+window-rule {
+    match app-id=r#"^xdg-desktop-portal$"#
+    open-floating false
+}
+
+window-rule {
+    match app-id="Alacritty"
+    match app-id="com.mitchellh.ghostty"
+    match app-id="kitty"
+    open-floating false
+    default-column-width { proportion 0.5; }
+    draw-border-with-background false
+    opacity 1.0
+}
+
+window-rule {
+    match app-id="gsr-ui" title="gsr ui"
+    open-floating true
+    open-fullscreen false
+    opacity 1.0
+}
+
+
+window-rule {
+    match is-active=false
+    opacity 0.96
+}
+window-rule {
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    match app-id="zoom"
+    open-floating true
+}
+// Open dms windows as floating by default
+window-rule {
+    match app-id=r#"org.quickshell$"#
+    open-floating true
+}
+debug {
+    honor-xdg-activation-with-invalid-serial
+}
+
+
+include "binds.kdl"
+include "global.kdl"
+include "layouts.kdl"
+
+include "noctalia.kdl"
