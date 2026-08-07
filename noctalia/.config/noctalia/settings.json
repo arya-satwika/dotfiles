@@ -370,7 +370,7 @@
                     {
                         "id": "Weather",
                         "roundedCorners": true,
-                        "showBackground": true,
+                        "showBackground": false,
                         "x": 80,
                         "y": 920
                     }
@@ -507,7 +507,7 @@
         "analogClockInCalendar": false,
         "autoLocate": false,
         "firstDayOfWeek": -1,
-        "hideWeatherCityName": true,
+        "hideWeatherCityName": false,
         "hideWeatherTimezone": false,
         "name": "Surabaya",
         "showCalendarEvents": true,

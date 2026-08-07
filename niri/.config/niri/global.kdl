@@ -14,9 +14,6 @@ layer-rule {
   place-within-backdrop true
 }
 
-// Set transparent workspace background color so you see the backdrop at all times.
-
-// Optionally, disable the workspace shadows in the overview.
 overview {
   workspace-shadow {
     off
@@ -33,8 +30,8 @@ spawn-at-startup "qs" "-c" "noctalia-shell"
 
 spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
 
-spawn-at-startup "whatkevr"
-spawn-at-startup "/opt/zen-browser-bin/zen-bin"
+spawn-at-startup "elecwhat"
+spawn-at-startup "zen-browser"
 
 environment {
    GTK_USE_PORTAL "1"
