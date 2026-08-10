@@ -3,18 +3,17 @@ layout {
     struts{
         top 1
         bottom 1
+        left 1
+        right 1
     }
     focus-ring{
-        width 3
+        width 2
     }
     border{
-        width 3
+        width 2
     }
 }
 
-window-rule {
- 
-}
 
 /* Noctalia: blur everywhere without xray for a better look */
 layer-rule {

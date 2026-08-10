@@ -67,8 +67,8 @@ overview {
 
 
 spawn-at-startup "vesktop"
-// spawn-at-startup "pear-desktop"
-spawn-at-startup "spotify"
+spawn-at-startup "pear-desktop"
+// spawn-at-startup "spotify"
 
 // to make dolphin's app picker work on niri
 spawn-at-startup "dbus-update-activation-environment" "--systemd" "XDG_MENU_PREFIX=arch-"
@@ -100,6 +100,11 @@ window-rule {
     opacity 1.0
 }
 
+window-rule {
+    match app-id="steam_app"
+    open-fullscreen true
+    opacity 1.0
+}
 
 window-rule {
     match is-active=false
