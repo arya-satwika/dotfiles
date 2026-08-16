@@ -42,28 +42,7 @@ input {
     }
 }
 
-cursor {
-    xcursor-theme "Posy_Cursor_125_175"
-    xcursor-size 32
-}
 
-
-layout {
-    background-color "transparent"
-    struts {
-        top 4
-        bottom 4
-    }
-}
-layer-rule {
-    match namespace="^quickshell$"
-    place-within-backdrop true
-}
-overview {
-    workspace-shadow {
-        off
-    }
-}
 
 
 spawn-at-startup "vesktop"
@@ -72,10 +51,10 @@ spawn-at-startup "pear-desktop"
 
 // to make dolphin's app picker work on niri
 spawn-at-startup "dbus-update-activation-environment" "--systemd" "XDG_MENU_PREFIX=arch-"
-
-
-
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
+
+
 
 
 window-rule {
@@ -128,5 +107,4 @@ debug {
 include "binds.kdl"
 include "global.kdl"
 include "layouts.kdl"
-
 include "noctalia.kdl"
