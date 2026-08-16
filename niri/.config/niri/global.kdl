@@ -10,7 +10,7 @@ cursor {
     hide-after-inactive-ms 1500
 }
 
-spawn-at-startup "qs" "-c" "noctalia-shell"
+spawn-at-startup "noctalia"
 
 spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
 
