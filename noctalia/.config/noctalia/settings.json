@@ -25,12 +25,13 @@
         "showIconBackground": true,
         "sortByMostUsed": true,
         "terminalCommand": "kitty -e",
-        "viewMode": "list"
+        "viewMode": "grid"
     },
     "audio": {
         "mprisBlacklist": [
+            "Zen"
         ],
-        "preferredPlayer": "Spotify",
+        "preferredPlayer": "Youtube Music",
         "spectrumFrameRate": 30,
         "spectrumMirrored": false,
         "visualizerType": "wave",

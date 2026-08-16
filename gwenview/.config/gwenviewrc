@@ -1,5 +1,8 @@
 [Crop]
 CropAdvancedSettingsEnabled=true
+CropRatioHeight=1
+CropRatioIndex=1
+CropRatioWidth=1
 
 [General]
 LastUsedVersion=210800
@@ -7,32 +10,32 @@ SideBarPage=operations
 ThumbnailBarIsVisible=true
 
 [ImageView]
-ThumbnailSplitterSizes=719,205
+ThumbnailSplitterSizes=752,215
 
 [MainWindow]
 MenuBar=Disabled
 
 [Recent Files]
-File1[$e]=/mnt/WDBlue/SEKOLAH/UNESA/RPLDiagrams/CariMateriActivity.png
-File10[$e]=$HOME/repos/programming-lul/image/paper.2.jpeg
-File2[$e]=/mnt/WDBlue/[Photos]/memes/HYPERBouncinOnIt-4x.gif
-File3[$e]=/mnt/WDBlue/[Photos]/memes/only a slave quantifies existince through productivity.jpg
-File4[$e]=/mnt/WDBlue/[Photos]/memes/another blank to blank meme.png
-File5[$e]=/mnt/WDBlue/SEKOLAH/UNESA/RPLDiagrams/UseCaseDiagram1.png
-File6[$e]=/mnt/WDBlue/SEKOLAH/UNESA/RPLDiagrams/UploadMateriSequence.png
-File7[$e]=/mnt/WDBlue/SEKOLAH/UNESA/RPLDiagrams/png/Aplikasi Pengelola Materi!UseCaseDiagram1_0.png
-File8[$e]=/mnt/WDBlue/SEKOLAH/UNESA/RPLDiagrams/DFDDiagram1.png
-File9[$e]=/mnt/WDBlue/SEKOLAH/UNESA/tanda tangan.png
-Name1[$e]=CariMateriActivity.png
-Name10[$e]=paper.2.jpeg
-Name2[$e]=HYPERBouncinOnIt-4x.gif
-Name3[$e]=only a slave quantifies existince through productivity.jpg
-Name4[$e]=another blank to blank meme.png
-Name5[$e]=UseCaseDiagram1.png
-Name6[$e]=UploadMateriSequence.png
-Name7[$e]=Aplikasi Pengelola Materi!UseCaseDiagram1_0.png
-Name8[$e]=DFDDiagram1.png
-Name9[$e]=tanda tangan.png
+File1[$e]=/mnt/WDBlue/[Photos]/[artworks]/by karystmania.png
+File10[$e]=$HOME/repos/portofolio/public/screenshots/Screenshot from 2026-08-14 16-18-29.png
+File2[$e]=/mnt/WDBlue/[Photos]/[artworks]/by ink silvery.png
+File3[$e]=/mnt/WDBlue/[Photos]/[artworks]/by pandemoon_.png
+File4[$e]=/mnt/WDBlue/[Photos]/[artworks]/by patthewatcher.png
+File5[$e]=/mnt/WDBlue/[Photos]/[artworks]/by stitchedspider.png
+File6[$e]=/mnt/WDBlue/[Photos]/[artworks]/by gabbiecasso_4.png
+File7[$e]=/mnt/WDBlue/[Photos]/[artworks]/by vutkanartist.png
+File8[$e]=/mnt/WDBlue/[Photos]/[artworks]/by chuwenjie.png
+File9[$e]=/mnt/WDBlue/[Photos]/[artworks]/by chuwenjie_2.png
+Name1[$e]=by karystmania.png
+Name10[$e]=Screenshot from 2026-08-14 16-18-29.png
+Name2[$e]=by ink silvery.png
+Name3[$e]=by pandemoon_.png
+Name4[$e]=by patthewatcher.png
+Name5[$e]=by stitchedspider.png
+Name6[$e]=by gabbiecasso_4.png
+Name7[$e]=by vutkanartist.png
+Name8[$e]=by chuwenjie.png
+Name9[$e]=by chuwenjie_2.png
 
 [RedEyeReduction]
 RedEyeReductionDiameter=99
@@ -40,7 +43,7 @@ RedEyeReductionDiameter=99
 [SideBar]
 InformationSplitterSizes=219,256
 IsVisible ViewMode=true
-SideBarSplitterSizes=222,718
+SideBarSplitterSizes=222,705
 
 [UiSettings]
 ColorScheme=noctalia
