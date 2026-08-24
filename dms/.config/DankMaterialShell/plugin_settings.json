@@ -10,7 +10,7 @@
     "gpuTempVisualStyle": "gauge",
     "resourceOrder": "cpuUsage,cpuTemp,gpuTemp,ramUsage,diskPartitionUsage,networkSpeed",
     "ramUsageEnabled": true,
-    "ramUsageTextMode": "percentage",
+    "ramUsageTextMode": "value",
     "ramUsageVisualStyle": "default",
     "ramUsageShowIcon": true,
     "ramUsageFixedTextWidth": true,
@@ -51,5 +51,19 @@
     "noTrigger": false,
     "identityAction": "copy:passport",
     "loginAction": "autotype"
+  },
+  "wallpaperCarousel": {
+    "enabled": true,
+    "overlayOpacity": 68,
+    "itemHeight": 467,
+    "holdExpandRatio": 39,
+    "expandMultiplier": 230,
+    "selectedScale": 101,
+    "expandSelected": "true",
+    "holdDelay": 952,
+    "cornerRadius": 0,
+    "itemWidth": 255,
+    "borderWidth": 3,
+    "carouselMode": "infinite"
   }
 }

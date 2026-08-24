@@ -3,7 +3,7 @@
   "currentThemeCategory": "registry",
   "customThemeFile": "/home/aryas/.config/DankMaterialShell/themes/poimandres/theme.json",
   "registryThemeVariants": {
-    "oxocarbon": "blue",
+    "oxocarbon": "pink",
     "amoledBlack": {
       "light": {
         "flavor": "black-light",
@@ -15,7 +15,8 @@
         "flavor": "light",
         "accent": "pink"
       }
-    }
+    },
+    "gnomeAdwaita": "red"
   },
   "matugenScheme": "scheme-fruit-salad",
   "matugenContrast": 0,
@@ -219,8 +220,8 @@
   "waveProgressEnabled": true,
   "scrollTitleEnabled": true,
   "mediaAdaptiveWidthEnabled": true,
-  "audioVisualizerEnabled": false,
-  "mediaUseAlbumArtAccent": true,
+  "audioVisualizerEnabled": true,
+  "mediaUseAlbumArtAccent": false,
   "audioScrollMode": "volume",
   "audioWheelScrollAmount": 5,
   "audioDeviceScrollVolumeEnabled": false,
@@ -346,7 +347,7 @@
   "launcherLogoBrightness": 0.5,
   "launcherLogoContrast": 1,
   "launcherLogoSizeOffset": 0,
-  "fontFamily": "Okta Neue",
+  "fontFamily": "Google Sans",
   "monoFontFamily": "Roboto Mono [GOOG]",
   "fontWeight": 400,
   "fontScale": 1,
@@ -525,7 +526,7 @@
   "notificationRules": [],
   "notificationFocusedMonitor": false,
   "osdAlwaysShowValue": true,
-  "osdPosition": 7,
+  "osdPosition": 0,
   "osdVolumeEnabled": true,
   "osdMediaVolumeEnabled": false,
   "osdMediaPlaybackEnabled": false,
@@ -609,7 +610,11 @@
         }
       ],
       "centerWidgets": [
-        "clock"
+        {
+          "id": "clock",
+          "enabled": true,
+          "clockCompactMode": false
+        }
       ],
       "rightWidgets": [
         {
@@ -628,8 +633,12 @@
           "showScreenSharingIcon": false
         },
         {
-          "id": "colorPicker",
-          "enabled": true
+          "id": "systemTray",
+          "enabled": true,
+          "trayUseInlineExpansion": true,
+          "trayPopupSingleLine": false,
+          "trayAutoOverflow": true,
+          "trayMaxVisibleItems": 0
         },
         {
           "id": "music",
@@ -679,7 +688,8 @@
       "clickThrough": false,
       "hoverPopouts": false,
       "hoverPopoutDelay": 146,
-      "barInsetPadding": 6
+      "barInsetPadding": 6,
+      "useOverlayLayer": false
     }
   ],
   "desktopClockEnabled": false,
@@ -765,10 +775,10 @@
       },
       "positions": {
         "DP-1": {
+          "x": 41,
+          "y": 807,
           "width": 320,
-          "height": 240,
-          "x": 43,
-          "y": 810
+          "height": 240
         }
       }
     }

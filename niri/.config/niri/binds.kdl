@@ -13,7 +13,7 @@ binds {
 
 
     // NOTE: No direct cycleoutput in Noctalia; mapped to muteOutput as closest alternative
-    Ctrl+F3 { spawn-sh "~/dotfiles/Scripts/cycle-audio.sh"; }
+    Ctrl+F3 { spawn-sh "dms ipc call audio cycleoutput"; }
 
 
 
@@ -32,7 +32,7 @@ binds {
         spawn-sh "dms ipc call settings toggle";
     }
     Mod+Y hotkey-overlay-title="Browse Wallpapers" {
-        spawn-sh "dms ipc call dankdash wallpaper";
+        spawn-sh "dms ipc wallpaperCarousel toggle";
     }
     Mod+Q hotkey-overlay-title="Screen toolkit" {
         spawn-sh "qs -c noctalia-shell ipc call plugin:screen-toolkit toggle";
