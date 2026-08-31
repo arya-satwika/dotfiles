@@ -131,6 +131,7 @@ window-rule{
 window-rule {
     match app-id="Spotify"
     match app-id="com.github.th-ch.youtube-music"
+    match app-id="kopuz"
     default-column-width { proportion 0.7; }
     open-on-workspace "main"
 }

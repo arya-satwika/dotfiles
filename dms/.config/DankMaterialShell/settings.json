@@ -82,7 +82,7 @@
   "wallpaperFillMode": "Fill",
   "blurredWallpaperLayer": false,
   "blurWallpaperOnOverview": false,
-  "wallpaperBackgroundColorMode": "black",
+  "wallpaperBackgroundColorMode": "surface",
   "wallpaperBackgroundCustomColor": "#000000",
   "showLauncherButton": true,
   "showWorkspaceSwitcher": true,
@@ -195,7 +195,7 @@
   "workspaceFocusedCustomColor": "#fffac2",
   "workspaceOccupiedColorMode": "primary",
   "workspaceOccupiedCustomColor": "#fffac2",
-  "workspaceUnfocusedColorMode": "default",
+  "workspaceUnfocusedColorMode": "secondary",
   "workspaceUnfocusedCustomColor": "#49454E",
   "workspaceUrgentColorMode": "default",
   "workspaceUrgentCustomColor": "#B3261E",
@@ -251,7 +251,7 @@
   "runningAppsGroupByApp": false,
   "runningAppsCurrentMonitor": false,
   "appIdSubstitutions": [],
-  "centeringMode": "index",
+  "centeringMode": "geometric",
   "clockDateFormat": "",
   "lockDateFormat": "",
   "greeterRememberLastSession": true,
@@ -611,9 +611,21 @@
       ],
       "centerWidgets": [
         {
+          "id": "enderPulse:builtin_output",
+          "enabled": true
+        },
+        {
           "id": "clock",
           "enabled": true,
           "clockCompactMode": false
+        },
+        {
+          "id": "dankPomodoroTimer",
+          "enabled": false
+        },
+        {
+          "id": "enderPulse:builtin_output",
+          "enabled": true
         }
       ],
       "rightWidgets": [
@@ -775,10 +787,10 @@
       },
       "positions": {
         "DP-1": {
-          "x": 41,
-          "y": 807,
-          "width": 320,
-          "height": 240
+          "x": 34,
+          "y": 764,
+          "width": 539,
+          "height": 295
         }
       }
     }

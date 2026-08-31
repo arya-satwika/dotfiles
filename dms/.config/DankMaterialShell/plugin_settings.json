@@ -65,5 +65,38 @@
     "itemWidth": 255,
     "borderWidth": 3,
     "carouselMode": "infinite"
+  },
+  "enderPulse": {
+    "enabled": true,
+    "variants": [
+      {
+        "id": "builtin_output",
+        "name": "System output",
+        "audioTarget": "system",
+        "audioBackend": "auto",
+        "customAudioSource": "",
+        "icon": "volume_up",
+        "description": "EnderPulse audio source: System output"
+      },
+      {
+        "id": "builtin_microphone",
+        "name": "Microphone input",
+        "audioTarget": "microphone",
+        "audioBackend": "auto",
+        "customAudioSource": "",
+        "icon": "mic",
+        "description": "EnderPulse audio source: Microphone input"
+      }
+    ],
+    "mode": "mirror",
+    "barLength": 80,
+    "bandCount": 49,
+    "sensitivity": 100,
+    "smoothing": 40,
+    "glow": 45,
+    "backgroundOpacity": 0,
+    "fadeDelay": 6,
+    "audioBackend": "pipewire",
+    "palette": "material"
   }
 }

@@ -38,7 +38,7 @@ binds {
         spawn-sh "qs -c noctalia-shell ipc call plugin:screen-toolkit toggle";
     }
     Mod+P hotkey-overlay-title="pomodoro" {
-        spawn-sh "qs -c noctalia-shell ipc call plugin:pomodoro toggle";
+        spawn-sh "dms ipc widget toggle dankPomodoroTimer";
     }
     // === Security ===
     Mod+Alt+L hotkey-overlay-title="Lock Screen" {
