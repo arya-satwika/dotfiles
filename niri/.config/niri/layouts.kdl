@@ -24,7 +24,7 @@ window-rule{
 
 
 layer-rule {
-  match namespace="^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd)$"
+  match namespace="dms:frame"
   background-effect {
     xray false
     // blur false

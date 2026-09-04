@@ -124,4 +124,8 @@ include "binds.kdl"
 include "global.kdl"
 include "layouts.kdl"
 
-include "noctalia.kdl"
+// include "noctalia.kdl"
+
+// DMS Include Configs
+include "dms/alttab.kdl"
+include "dms/colors.kdl"
