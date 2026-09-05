@@ -30,6 +30,17 @@ layer-rule {
     // blur false
   }
 }
+layer-rule {
+  match namespace="dms:osd"
+  match namespace="dms:toast"
+  match namespace="dms:dash"
+  match namespace="dms:tray-menu-window"
+  match namespace="dms:control-center"
+  
+  background-effect {
+    blur false
+  }
+}
 
 // Open DMS windows as floating by default
 window-rule {

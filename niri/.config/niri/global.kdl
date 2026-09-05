@@ -41,6 +41,7 @@ environment {
    QT_QPA_PLATFORMTHEME_QT6 "qt6ct"
    QT_NO_SYNTHESIZED_BOLD "1"
    ELECTRON_OZONE_PLATFORM_HINT "auto"
+   XDG_MENU_PREFIX "plasma-"
    EDITOR "nano"
    TERM "kitty"
    TERMINAL "kitty"
@@ -119,7 +120,15 @@ workspace "main"{
     }
 }
 
-
+window-rule{
+    match app-id="blender"
+    default-column-width {fixed 1400;}
+    default-window-height {fixed 1050;}
+    tiled-state true
+    open-fullscreen false
+    open-maximized-to-edges false
+    open-maximized true
+}
 
 window-rule{
     match app-id="zen"
