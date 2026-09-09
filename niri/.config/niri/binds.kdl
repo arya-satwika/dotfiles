@@ -16,7 +16,7 @@ binds {
     Ctrl+F3 { spawn-sh "dms ipc call audio cycleoutput"; }
 
 
-
+    // SHELL SPECIFIC
     // === Application Launchers ===
     Mod+Space hotkey-overlay-title="Application Launcher" {
         spawn-sh "dms ipc call spotlight toggle";
@@ -31,6 +31,9 @@ binds {
     Mod+Comma hotkey-overlay-title="Settings" {
         spawn-sh "dms ipc call settings toggle";
     }
+    Mod+Period hotkey-overlay-title="DankDash" {
+        spawn-sh "dms ipc call dash toggle overview";
+    }
     Mod+Y hotkey-overlay-title="Browse Wallpapers" {
         spawn-sh "dms ipc wallpaperCarousel toggle";
     }
@@ -44,6 +47,8 @@ binds {
     Mod+Alt+L hotkey-overlay-title="Lock Screen" {
         spawn-sh "dms ipc call lock lock";
     }
+
+
 
      // === Audio & Brightness ===
     XF86AudioRaiseVolume { spawn-sh "dms ipc call audio increment 5"; }

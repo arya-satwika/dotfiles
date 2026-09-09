@@ -36,6 +36,7 @@ layer-rule {
   match namespace="dms:dash"
   match namespace="dms:tray-menu-window"
   match namespace="dms:control-center"
+  match namespace="dms:tooltip"
   
   background-effect {
     blur false
