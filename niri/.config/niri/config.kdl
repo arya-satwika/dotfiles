@@ -38,6 +38,9 @@ input {
     }
     mouse {
         accel-profile "flat"
+        scroll-method "on-button-down"
+        scroll-button 274
+        // scroll-button-lock
     }
     trackpoint {
     }

@@ -17,7 +17,9 @@
     "ramUsageShowText": true,
     "ramUsageColorizeText": false,
     "ramUsageCustomTemplate": "{usedGB}",
-    "ramUsageUseValueColors": true
+    "ramUsageUseValueColors": true,
+    "gpuTempShowIcon": true,
+    "gpuTempNormalColorKey": "secondary"
   },
   "mediaControlPlus": {
     "enabled": true

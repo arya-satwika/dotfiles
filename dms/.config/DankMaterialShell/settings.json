@@ -106,8 +106,8 @@
   "mediaExcludePlayers": [
     "zen"
   ],
+  "appsDockHideIndicators": true,
   "appsDockColorizeActive": true,
-  "appsDockIconSizePercentage": 110,
   "appIdSubstitutions": [],
   "centeringMode": "geometric",
   "sortAppsAlphabetically": true,
