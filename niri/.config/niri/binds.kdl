@@ -35,6 +35,9 @@ binds {
     Mod+Period hotkey-overlay-title="DankDash" {
         spawn-sh "dms ipc call dash toggle overview";
     }
+    Mod+BackSlash hotkey-overlay-title="ControlCenter" {
+        spawn-sh "dms ipc call control-center toggle";
+    }
     Mod+Y hotkey-overlay-title="Browse Wallpapers" {
         spawn-sh "dms ipc wallpaperCarousel toggle";
     }
