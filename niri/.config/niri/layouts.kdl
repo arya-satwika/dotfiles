@@ -26,6 +26,7 @@ window-rule{
 layer-rule {
   match namespace="dms:frame"
   match namespace="dms:slideout"
+  match namespace="dms:power-menu"
   
   background-effect {
     xray false
