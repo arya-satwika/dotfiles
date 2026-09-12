@@ -90,13 +90,22 @@
     ],
     "mode": "mirror",
     "barLength": 80,
-    "bandCount": 49,
-    "sensitivity": 100,
-    "smoothing": 40,
+    "bandCount": 35,
+    "sensitivity": 112,
+    "smoothing": 48,
     "glow": 45,
     "backgroundOpacity": 0,
     "fadeDelay": 6,
     "audioBackend": "pipewire",
     "palette": "material"
+  },
+  "screenRecorderLH": {
+    "enabled": true,
+    "audioCodec": "opus",
+    "videoQuality": "high",
+    "recordingMode": "region",
+    "regionGeometry": "940x1006+468+38",
+    "targetResolution": "1080p",
+    "copyPathToClipboard": true
   }
 }

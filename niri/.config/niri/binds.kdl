@@ -23,6 +23,7 @@ binds {
     }
     // === Open Power Menu ===
     Mod+Shift+P { spawn-sh "dms ipc call powermenu toggle"; }
+    Mod+Shift+N { spawn-sh "dms ipc call notepad toggle"; }
     Alt+Grave { spawn-sh "dms ipc call mic mute"; }
 
     Mod+V hotkey-overlay-title="Clipboard Manager" {

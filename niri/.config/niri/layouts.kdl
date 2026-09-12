@@ -25,6 +25,8 @@ window-rule{
 
 layer-rule {
   match namespace="dms:frame"
+  match namespace="dms:slideout"
+  
   background-effect {
     xray false
     // blur false
@@ -46,6 +48,7 @@ layer-rule {
 // Open DMS windows as floating by default
 window-rule {
     match app-id=r#"com.danklinux.dms$"#
+    
     open-floating true
     background-effect{
         xray false
