@@ -11,17 +11,15 @@ binds {
     // Toggle Droidcam
     Mod+F12 { spawn-sh "pkill droidcam-cli || exec droidcam-cli 192.168.0.196 4747";}
 
-
-    // NOTE: No direct cycleoutput in Noctalia; mapped to muteOutput as closest alternative
+    // ===AUDIO SWITCHER===
     Ctrl+F3 { spawn-sh "dms ipc call audio cycleoutput"; }
 
 
-    // SHELL SPECIFIC
-    // === Application Launchers ===
+    // ====== SHELL SPECIFIC =======
+    
     Mod+Space hotkey-overlay-title="Application Launcher" {
         spawn-sh "dms ipc call spotlight toggle";
     }
-    // === Open Power Menu ===
     Mod+Shift+P { spawn-sh "dms ipc call powermenu toggle"; }
     Mod+Shift+N { spawn-sh "dms ipc call notepad toggle"; }
     Alt+Grave { spawn-sh "dms ipc call mic mute"; }

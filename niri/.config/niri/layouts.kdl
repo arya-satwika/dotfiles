@@ -3,15 +3,23 @@ layout {
     struts{
         top -1
         bottom -1
-        left -2
-        right -2
+        left 0
+        right 0
     }
-    focus-ring{
+    border {
+        width 1
+    }
+    focus-ring {
         width 2
     }
-    border{
-        width 2
+    preset-column-widths {
+        proportion 0.2
+        proportion 0.5
+        proportion 0.8
     }
+    background-color "transparent"
+    default-column-width { proportion 0.5; }
+    // focus ring & border width is set by dms
 }
 window-rule{
     background-effect {
@@ -24,22 +32,14 @@ window-rule{
 
 
 layer-rule {
-  match namespace="dms:frame"
-  match namespace="dms:slideout"
-  match namespace="dms:power-menu"
-  
+  match namespace="^dms:(frame|slideout|power-menu)$"
   background-effect {
     xray false
     // blur false
   }
 }
 layer-rule {
-  match namespace="dms:osd"
-  match namespace="dms:toast"
-  match namespace="dms:dash"
-  match namespace="dms:tray-menu-window"
-  match namespace="dms:control-center"
-  match namespace="dms:tooltip"
+  match namespace="^dms:(osd|toast|dash|tray-menu-window|control-center|tooltip)$"
   
   background-effect {
     blur false
@@ -56,7 +56,3 @@ window-rule {
     }
 }
 
-window-rule {
-    match app-id="python3"
-    open-floating false
-}

@@ -1,0 +1,82 @@
+window-rule {
+    match app-id=r#"^xdg-desktop-portal$"#
+    open-floating false
+}
+window-rule{
+    match app-id="blender"
+    default-column-width {fixed 1400;}
+    default-window-height {fixed 1050;}
+    tiled-state true
+    open-fullscreen false
+    open-maximized-to-edges false
+    open-maximized true
+}
+
+window-rule {
+    match app-id="com.mitchellh.ghostty"
+    match app-id="kitty"
+    open-floating false
+    default-column-width { proportion 0.5; }
+    draw-border-with-background false
+    opacity 1.0
+}
+
+window-rule {
+    match app-id="gsr-ui" title="gsr ui"
+    open-floating true
+    open-fullscreen false
+    opacity 1.0
+}
+
+window-rule {
+    match app-id="steam_app"
+    open-fullscreen true
+    opacity 1.0
+}
+
+window-rule{
+    match app-id="zen"
+    default-column-width { proportion 0.9; }
+    tiled-state true
+    open-on-workspace "main"
+}
+
+window-rule {
+    match app-id="Spotify"
+    match app-id="com.github.th-ch.youtube-music"
+    match app-id="kopuz"
+    default-column-width { proportion 0.7; }
+    open-on-workspace "main"
+}
+
+
+window-rule {
+    match app-id="Minecraft"
+    open-maximized true
+}
+
+window-rule {
+    match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
+    default-floating-position x=10 y=10 relative-to="bottom-right"
+}
+
+window-rule {
+    match app-id="elecwhat"
+    match app-id="in.codelif.Whatevr"
+    match app-id="vesktop"
+    open-on-workspace "socials"
+    block-out-from "screencast"
+}
+
+
+window-rule {
+    match app-id="droidcam"
+    open-on-workspace "main"
+    open-floating false
+    open-focused true
+    block-out-from "screencast"
+}
+window-rule {
+    match app-id="python3"
+    open-floating false
+}

@@ -46,19 +46,8 @@ input {
     }
 }
 
-cursor {
-    xcursor-theme "Posy_Cursor_125_175"
-    xcursor-size 32
-}
 
 
-layout {
-    background-color "transparent"
-    struts {
-        top 4
-        bottom 4
-    }
-}
 layer-rule {
     match namespace="^quickshell$"
     place-within-backdrop true
@@ -74,50 +63,16 @@ spawn-at-startup "vesktop"
 spawn-at-startup "pear-desktop"
 // spawn-at-startup "spotify"
 
-// to make dolphin's app picker work on niri
-// spawn-at-startup "dbus-update-activation-environment" "--systemd" "XDG_MENU_PREFIX=arch-"
-
-
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 
-window-rule {
-    match app-id=r#"^xdg-desktop-portal$"#
-    open-floating false
-}
 
-window-rule {
-    match app-id="Alacritty"
-    match app-id="com.mitchellh.ghostty"
-    match app-id="kitty"
-    open-floating false
-    default-column-width { proportion 0.5; }
-    draw-border-with-background false
-    opacity 1.0
-}
 
-window-rule {
-    match app-id="gsr-ui" title="gsr ui"
-    open-floating true
-    open-fullscreen false
-    opacity 1.0
-}
-
-window-rule {
-    match app-id="steam_app"
-    open-fullscreen true
-    opacity 1.0
-}
 
 window-rule {
     match is-active=false
-    opacity 0.96
-}
-window-rule {
-    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
-    match app-id="zoom"
-    open-floating true
+    opacity 0.97
 }
 debug {
     honor-xdg-activation-with-invalid-serial
@@ -127,11 +82,13 @@ debug {
 include "binds.kdl"
 include "global.kdl"
 include "layouts.kdl"
+include "applayouts.kdl"
 
 // include "noctalia.kdl"
 
 // DMS Include Configs
 include "dms/alttab.kdl"
 include "dms/colors.kdl"
+include "dms/layout.kdl"
 
-// include "noctalia.kdl"
+
