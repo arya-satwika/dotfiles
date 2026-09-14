@@ -27,9 +27,26 @@ window-rule{
         xray true
     }
     clip-to-geometry true
-    geometry-corner-radius 15
 }
 
+window-rule{
+    match is-floating=true
+    background-effect {
+        blur true
+        xray false
+    }
+    clip-to-geometry true
+}
+
+window-rule {
+    match is-active=false
+    opacity 0.97
+}
+
+layer-rule {
+    match namespace="^quickshell$"
+    place-within-backdrop true
+}
 
 layer-rule {
   match namespace="^dms:(frame|slideout|power-menu)$"
