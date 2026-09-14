@@ -1,0 +1,187 @@
+album_view_mode = "Grid"
+artist_album_view_mode = "Grid"
+artist_view_order = "Tracks"
+artists_view_mode = "Grid"
+auto_check_updates = true
+auto_fetch_covers = true
+back_behavior = "AlwaysPrev"
+channel_mode = "Stereo"
+cover_art_background = false
+cover_art_blur = 0
+cover_art_darkening = 60
+cover_fetch_strategy = "MusicBrainzFirst"
+crossfade_seconds = 0
+custom_background_path = ""
+custom_font_path = "/usr/share/fonts/Groteskly Yours  Okta Neue Medium.otf"
+device_change_behavior = "Resume"
+discord_presence = true
+discord_presence_paused = true
+discord_presence_source = true
+enable_musixmatch_lyrics = true
+fullscreen_use_player_bar = false
+hero_height = 369
+language = "en"
+lastfm_api_key = ""
+lastfm_api_secret = ""
+lastfm_session_key = ""
+librefm_api_key = ""
+librefm_api_secret = ""
+librefm_session_key = ""
+listen_now_style = "Cards"
+live_theme_path = ""
+local_sources = []
+lyrics_depth_blur = false
+lyrics_depth_blur_strength = 100
+lyrics_offset_auto = true
+lyrics_offset_ms = 0
+minimize_to_tray = false
+music_directory = ["/home/aryas/Music"]
+musicbrainz_token = ""
+offline_quality = "Kbps320"
+pinned_stations = []
+player_bar_position = "Bottom"
+prefer_local_lyrics = false
+reduce_animations = false
+sample_rate_mode = "System"
+settings_layout = "TopBar"
+show_row_images = true
+show_source_toggle = true
+sidebar_order = [
+    "home",
+    "search",
+    "playlists",
+    "favorites",
+    "library",
+    "albums",
+    "artists",
+    "activity",
+    "radio",
+    "ytdlp",
+]
+sort_order = "Title"
+spotify_prefer_active_device = true
+theme = "custom-poimandres"
+titlebar_mode = "Off"
+tracing_enabled = false
+ui_style = "Normal"
+volume = 0.76
+volume_scroll_step = 0.05
+ytdlp_output_dir = ""
+
+[active_source]
+Server = "78bf54a0-0547-4ee7-85b5-9ddeda75b2bc"
+
+[[album_sort]]
+direction = "Asc"
+field = "Title"
+
+[[artist_album_sort]]
+direction = "Asc"
+field = "Title"
+
+[[artist_sort]]
+direction = "Asc"
+field = "Name"
+
+[custom_themes.custom-poimandres]
+name = "Poimandres"
+
+[custom_themes.custom-poimandres.vars]
+accent = "#5de4c7"
+accent-alt = "#5de4c7"
+accent-deep = "#14afec"
+accent-soft = "#add7ff"
+bg = "#1b1e28"
+danger = "#f087bd"
+highlight = "#fffac2"
+highlight-dark = "#fffac2"
+progress = "#89ddff"
+raised = "#303340"
+surface = "#506477"
+text = "#ffffff"
+text-muted = "#add7ff"
+
+[equalizer]
+bands = [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+]
+enabled = false
+preamp_db = 0.0
+preset = "Flat"
+
+[[home_sections]]
+enabled = true
+key = "hero"
+
+[[home_sections]]
+enabled = true
+key = "continue_listening"
+
+[[home_sections]]
+enabled = true
+key = "listen_now"
+
+[[home_sections]]
+enabled = true
+key = "top_artists"
+
+[[home_sections]]
+enabled = true
+key = "new_releases"
+
+[[home_sections]]
+enabled = true
+key = "made_for_you"
+
+[[home_sections]]
+enabled = true
+key = "recently_added"
+
+[[home_sections]]
+enabled = true
+key = "playlists"
+
+[[library_sort]]
+direction = "Asc"
+field = "DateAdded"
+
+[[radio_registries]]
+enabled = true
+is_default = true
+url = "https://raw.githubusercontent.com/Kopuz-org/kopuz/refs/heads/master/radio-registry/index.json"
+
+[server_folders]
+
+[ytdlp_options]
+audio_quality = 0
+convert_thumbnail = ""
+cookies_from_browser = ""
+embed_chapters = false
+embed_info_json = false
+embed_metadata = true
+embed_subs = false
+embed_thumbnail = true
+js_runtimes = ""
+no_mtime = false
+no_playlist = false
+postprocess_thumbnail_square = false
+rate_limit = ""
+split_chapters = false
+sponsorblock = false
+sponsorblock_mark = false
+write_auto_subs = false
+write_comments = false
+write_description = false
+write_info_json = false
+write_subs = false
+write_thumbnail = false
+xattrs = false
