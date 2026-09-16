@@ -49,7 +49,7 @@ layer-rule {
 }
 
 layer-rule {
-  match namespace="^dms:(frame|slideout|power-menu)$"
+  match namespace="^dms:(frame|slideout|power-menu|notification-popup)$"
   background-effect {
     xray false
     // blur false
