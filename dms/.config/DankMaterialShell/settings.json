@@ -25,16 +25,18 @@
   "widgetBackgroundColor": "sth",
   "cornerRadius": 18,
   "niriLayoutGapsOverride": -2,
-  "niriLayoutRadiusOverride": 17,
+  "niriLayoutRadiusOverride": 25,
   "keyboardLayouts": "us",
   "calendarBackend": "dankcal",
   "clockFormat": "24h",
-  "customAnimationDuration": 300,
+  "animationSpeed": 2,
+  "customAnimationDuration": 410,
   "syncComponentAnimationSpeeds": false,
-  "popoutAnimationSpeed": 4,
-  "popoutCustomAnimationDuration": 259,
+  "popoutAnimationSpeed": 2,
+  "popoutCustomAnimationDuration": 253,
   "modalAnimationSpeed": 4,
   "modalCustomAnimationDuration": 304,
+  "springBounce": 2,
   "motionEffect": 2,
   "m3ElevationEnabled": false,
   "m3ElevationIntensity": 60,
@@ -91,9 +93,24 @@
       "width": 25
     },
     {
+      "id": "colorPicker",
+      "enabled": true,
+      "width": 25
+    },
+    {
       "id": "plugin_screenRecorderLH",
       "enabled": true,
+      "width": 25
+    },
+    {
+      "id": "builtin_cups",
+      "enabled": true,
       "width": 50
+    },
+    {
+      "id": "doNotDisturb",
+      "enabled": true,
+      "width": 25
     }
   ],
   "showOccupiedWorkspacesOnly": true,
@@ -216,6 +233,10 @@
           "runningAppsGroupByApp": false,
           "runningAppsCurrentWorkspace": true,
           "runningAppsCurrentMonitor": false
+        },
+        {
+          "id": "ocrScanner",
+          "enabled": false
         }
       ],
       "centerWidgets": [
@@ -291,7 +312,7 @@
       "widgetOutlineOpacity": 1,
       "widgetOutlineThickness": 1,
       "fontScale": 1,
-      "iconScale": 1,
+      "iconScale": 1.05,
       "autoHide": false,
       "autoHideDelay": 250,
       "showOnWindowsOpen": false,
@@ -402,10 +423,10 @@
   },
   "frameEnabled": true,
   "frameThickness": 4,
-  "frameRounding": 20,
+  "frameRounding": 26,
   "frameOpacity": 0.94,
   "frameBarSize": 35,
   "frameLauncherArcExtender": true,
-  "frameBarInsetPadding": 0,
+  "frameBarInsetPadding": 4,
   "configVersion": 18
 }

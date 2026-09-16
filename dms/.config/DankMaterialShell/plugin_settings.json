@@ -109,5 +109,8 @@
     "regionGeometry": "940x1006+468+38",
     "targetResolution": "1080p",
     "copyPathToClipboard": true
+  },
+  "ocrScanner": {
+    "enabled": true
   }
 }
