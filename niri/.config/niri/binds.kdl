@@ -14,6 +14,7 @@ binds {
     // ===AUDIO SWITCHER===
     Ctrl+F3 { spawn-sh "dms ipc call audio cycleoutput"; }
 
+    Mod+Grave{ spawn-sh "pkill -USR2 -x handy";}
 
     // ====== SHELL SPECIFIC =======
     

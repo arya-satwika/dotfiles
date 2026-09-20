@@ -19,7 +19,7 @@
     "ramUsageCustomTemplate": "{usedGB}",
     "ramUsageUseValueColors": true,
     "gpuTempShowIcon": true,
-    "gpuTempNormalColorKey": "secondary"
+    "gpuTempNormalColorKey": "primaryContainer"
   },
   "mediaControlPlus": {
     "enabled": true
@@ -111,6 +111,9 @@
     "copyPathToClipboard": true
   },
   "ocrScanner": {
+    "enabled": true
+  },
+  "screenCaptureToolbar": {
     "enabled": true
   }
 }
