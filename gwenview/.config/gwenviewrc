@@ -10,32 +10,32 @@ SideBarPage=operations
 ThumbnailBarIsVisible=true
 
 [ImageView]
-ThumbnailSplitterSizes=752,215
+ThumbnailSplitterSizes=749,214
 
 [MainWindow]
 MenuBar=Disabled
 
 [Recent Files]
-File1[$e]=/mnt/WDBlue/[Photos]/[artworks]/by karystmania.png
-File10[$e]=$HOME/repos/portofolio/public/screenshots/Screenshot from 2026-08-14 16-18-29.png
-File2[$e]=/mnt/WDBlue/[Photos]/[artworks]/by ink silvery.png
-File3[$e]=/mnt/WDBlue/[Photos]/[artworks]/by pandemoon_.png
-File4[$e]=/mnt/WDBlue/[Photos]/[artworks]/by patthewatcher.png
-File5[$e]=/mnt/WDBlue/[Photos]/[artworks]/by stitchedspider.png
-File6[$e]=/mnt/WDBlue/[Photos]/[artworks]/by gabbiecasso_4.png
-File7[$e]=/mnt/WDBlue/[Photos]/[artworks]/by vutkanartist.png
-File8[$e]=/mnt/WDBlue/[Photos]/[artworks]/by chuwenjie.png
-File9[$e]=/mnt/WDBlue/[Photos]/[artworks]/by chuwenjie_2.png
-Name1[$e]=by karystmania.png
-Name10[$e]=Screenshot from 2026-08-14 16-18-29.png
-Name2[$e]=by ink silvery.png
-Name3[$e]=by pandemoon_.png
-Name4[$e]=by patthewatcher.png
-Name5[$e]=by stitchedspider.png
-Name6[$e]=by gabbiecasso_4.png
-Name7[$e]=by vutkanartist.png
-Name8[$e]=by chuwenjie.png
-Name9[$e]=by chuwenjie_2.png
+File1[$e]=/mnt/WDBlue/[Photos]/[artworks]/by ramenbats_.jpg
+File10[$e]=$HOME/Pictures/Screenshots/Screenshot from 2026-09-23 15-47-32.png
+File2[$e]=/mnt/WDBlue/[Photos]/[artworks]/by stitchedspider_4.jpg
+File3[$e]=/mnt/WDBlue/[Photos]/[artworks]/by 1998Wens.jpg
+File4[$e]=/mnt/WDBlue/[Photos]/[artworks]/by mugit49_2.jpg
+File5[$e]=/mnt/WDBlue/[Photos]/[artworks]/by ertdoesart.jpg
+File6[$e]=/mnt/WDBlue/[Photos]/[artworks]/by dave_opm.jpg
+File7[$e]=/mnt/WDBlue/[Photos]/[artworks]/by polluxery_3.jpg
+File8[$e]=/mnt/WDBlue/[Photos]/[artworks]/by axelstool.jpg
+File9[$e]=/mnt/WDBlue/[Photos]/[artworks]/by rostamworks.jpg
+Name1[$e]=by ramenbats_.jpg
+Name10[$e]=Screenshot from 2026-09-23 15-47-32.png
+Name2[$e]=by stitchedspider_4.jpg
+Name3[$e]=by 1998Wens.jpg
+Name4[$e]=by mugit49_2.jpg
+Name5[$e]=by ertdoesart.jpg
+Name6[$e]=by dave_opm.jpg
+Name7[$e]=by polluxery_3.jpg
+Name8[$e]=by axelstool.jpg
+Name9[$e]=by rostamworks.jpg
 
 [RedEyeReduction]
 RedEyeReductionDiameter=99
@@ -46,4 +46,4 @@ IsVisible ViewMode=true
 SideBarSplitterSizes=222,705
 
 [UiSettings]
-ColorScheme=noctalia
+ColorScheme=DankMatugenDark
