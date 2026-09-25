@@ -114,6 +114,11 @@
     "enabled": true
   },
   "screenCaptureToolbar": {
-    "enabled": true
+    "enabled": true,
+    "captureMode": "monitor",
+    "copyVideoFile": true,
+    "recordAudio": false,
+    "showNotify": false,
+    "delaySeconds": 3
   }
 }

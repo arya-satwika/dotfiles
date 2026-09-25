@@ -16,10 +16,10 @@ binds {
 
     Mod+Grave{ spawn-sh "pkill -USR2 -x handy";}
 
+
     // ====== SHELL SPECIFIC =======
-    
     Mod+Space hotkey-overlay-title="Application Launcher" {
-        spawn-sh "dms ipc call spotlight toggle";
+        spawn-sh "dms ipc call spotlight-bar toggle";
     }
     Mod+Shift+P { spawn-sh "dms ipc call powermenu toggle"; }
     Mod+Shift+N { spawn-sh "dms ipc call notepad toggle"; }
@@ -41,7 +41,7 @@ binds {
         spawn-sh "dms ipc wallpaperCarousel toggle";
     }
     Mod+Q hotkey-overlay-title="Screen toolkit" {
-        spawn-sh "qs -c noctalia-shell ipc call plugin:screen-toolkit toggle";
+        spawn-sh "dms ipc call screenCaptureToolbar toggle";
     }
     Mod+P hotkey-overlay-title="pomodoro" {
         spawn-sh "dms ipc widget toggle dankPomodoroTimer";

@@ -49,7 +49,7 @@ layer-rule {
 }
 
 layer-rule {
-  match namespace="^dms:(frame|slideout|power-menu|notification-popup)$"
+  match namespace="^dms:(frame|slideout|power-menu|notification-popup|spotlight)$"
   background-effect {
     xray false
     // blur false
@@ -66,7 +66,7 @@ layer-rule {
 // Open DMS windows as floating by default
 window-rule {
     match app-id=r#"com.danklinux.dms$"#
-    
+    match app-id=r#"com.danklinux.dankcalendar$"#
     open-floating true
     background-effect{
         xray false
