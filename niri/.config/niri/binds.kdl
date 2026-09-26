@@ -34,6 +34,12 @@ binds {
     Mod+Period hotkey-overlay-title="DankDash" {
         spawn-sh "dms ipc call dash toggle overview";
     }
+    Mod+Shift+M hotkey-overlay-title="DankMedia" {
+        spawn-sh "dms ipc call dash open media";
+    }
+    Mod+Shift+W hotkey-overlay-title="DankWeather" {
+        spawn-sh "dms ipc call dash open weather";
+    }
     Mod+BackSlash hotkey-overlay-title="ControlCenter" {
         spawn-sh "dms ipc call control-center toggle";
     }
@@ -192,7 +198,7 @@ binds {
     XF86Launch1 { screenshot; }
     Ctrl+XF86Launch1 { screenshot-screen; }
     Alt+XF86Launch1 { screenshot-window; }
-    Mod+Shift+S { screenshot; }
+    Mod+Shift+S { spawn-sh "dms screenshot"; }
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
 
