@@ -9,7 +9,7 @@ binds {
     Mod+Return { spawn-sh "kitty"; }
     Mod+M { spawn "pear-desktop"; }
     // Toggle Droidcam
-    Mod+F12 { spawn-sh "pkill droidcam-cli || exec droidcam-cli 192.168.0.196 4747";}
+    Mod+F12 repeat=false cooldown-ms=500 { spawn-sh "bash ~/dotfiles/Scripts/toggle-phone-cam.sh";}
 
     // ===AUDIO SWITCHER===
     Ctrl+F3 { spawn-sh "dms ipc call audio cycleoutput"; }
@@ -39,6 +39,9 @@ binds {
     }
     Mod+Shift+W hotkey-overlay-title="DankWeather" {
         spawn-sh "dms ipc call dash open weather";
+    }
+    Mod+Shift+B hotkey-overlay-title="Bitwarden" {
+        spawn-sh "dms ipc call plugins toggle bitwarden";
     }
     Mod+BackSlash hotkey-overlay-title="ControlCenter" {
         spawn-sh "dms ipc call control-center toggle";
