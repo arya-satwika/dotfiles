@@ -38,8 +38,8 @@ input {
     }
     mouse {
         accel-profile "flat"
-        scroll-method "on-button-down"
-        scroll-button 274
+        // scroll-method "on-button-down"
+        // scroll-button 274
         // scroll-button-lock
     }
     trackpoint {
@@ -90,5 +90,3 @@ include "applayouts.kdl"
 include "dms/alttab.kdl"
 include "dms/colors.kdl"
 include "dms/layout.kdl"
-
-
