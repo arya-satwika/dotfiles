@@ -10,10 +10,10 @@
     "gpuTempVisualStyle": "gauge",
     "resourceOrder": "cpuUsage,cpuTemp,gpuTemp,ramUsage,diskPartitionUsage,networkSpeed",
     "ramUsageEnabled": true,
-    "ramUsageTextMode": "value",
+    "ramUsageTextMode": "percentage",
     "ramUsageVisualStyle": "default",
     "ramUsageShowIcon": true,
-    "ramUsageFixedTextWidth": true,
+    "ramUsageFixedTextWidth": false,
     "ramUsageShowText": true,
     "ramUsageColorizeText": false,
     "ramUsageCustomTemplate": "{usedGB}",
@@ -120,5 +120,8 @@
     "recordAudio": false,
     "showNotify": false,
     "delaySeconds": 3
+  },
+  "bitwarden": {
+    "enabled": true
   }
 }
