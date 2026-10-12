@@ -49,6 +49,13 @@ window-rule {
     open-on-workspace "main"
 }
 
+window-rule {
+    match app-id="org.kde.dolphin"
+    default-window-height { proportion 0.8; }
+    default-column-width { proportion 0.7; }
+    // default-floating-position x=32 y=32 relative-to="right"
+    open-floating true
+}
 
 window-rule {
     match app-id="Minecraft"
@@ -76,6 +83,7 @@ window-rule {
     open-focused true
     block-out-from "screencast"
 }
+
 window-rule {
     match app-id="python3"
     open-floating false
