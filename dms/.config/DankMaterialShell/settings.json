@@ -404,7 +404,8 @@
       "w": 4,
       "h": 1,
       "col": 4,
-      "row": 1
+      "row": 1,
+      "deviceName": "ddc:i2c-6"
     },
     {
       "id": "audioOutput",
@@ -447,16 +448,6 @@
       "row": 0
     },
     {
-      "id": "edit",
-      "enabled": true,
-      "w": 1,
-      "h": 1,
-      "small": true,
-      "footer": true,
-      "footerEnd": true,
-      "footerW": 1
-    },
-    {
       "id": "quickTiles",
       "enabled": true,
       "w": 2.5,
@@ -493,6 +484,15 @@
       "w": 1,
       "h": 1,
       "group": "mv38x3ywchi63xo145kawcs32f3sx"
+    },
+    {
+      "id": "edit",
+      "enabled": true,
+      "w": 1,
+      "h": 1,
+      "small": true,
+      "col": 7,
+      "row": 4
     }
   ],
   "audioVisualizerEnabled": false,
@@ -626,7 +626,7 @@
           "tone": "primary",
           "city": false,
           "col": 0,
-          "row": 0
+          "row": 2
         },
         {
           "id": "hourly",
@@ -643,7 +643,7 @@
           "graphics": true,
           "tone": "",
           "col": 0,
-          "row": 2
+          "row": 0
         },
         {
           "id": "daily",
@@ -651,7 +651,7 @@
           "h": 2,
           "forecast": "chart",
           "col": 1,
-          "row": 2
+          "row": 0
         },
         {
           "id": "wind",
@@ -659,7 +659,7 @@
           "h": 2,
           "graphics": true,
           "tone": "",
-          "col": 3,
+          "col": 2,
           "row": 2
         },
         {
@@ -667,14 +667,18 @@
           "w": 1,
           "h": 2,
           "graphics": true,
-          "tone": ""
+          "tone": "",
+          "col": 3,
+          "row": 0
         },
         {
           "id": "uv",
           "w": 1,
           "h": 2,
           "graphics": true,
-          "tone": ""
+          "tone": "",
+          "col": 3,
+          "row": 2
         }
       ],
       "panelColumns": 3,
@@ -1145,7 +1149,7 @@
   "frameBarSize": 35,
   "frameLauncherArcExtender": true,
   "frameBarInsetPadding": 6,
-  "configVersion": 40,
+  "configVersion": 41,
   "frameMode": "connected",
   "frameShowOnOverview": false,
   "frameCloseGaps": true,

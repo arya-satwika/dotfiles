@@ -68,6 +68,9 @@ binds {
     XF86AudioMute { spawn-sh "dms ipc call audio mute"; }
     XF86MonBrightnessUp { spawn-sh "dms ipc call brightness increment 10"; }
     XF86MonBrightnessDown { spawn-sh "dms ipc call brightness decrement 10"; }
+    XF86AudioNext { spawn "playerctl" "next";}
+    XF86AudioPrev { spawn "playerctl" "previous";}
+    XF86AudioPlay { spawn "playerctl" "play-pause";}
 
 
 
