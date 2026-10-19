@@ -1092,16 +1092,19 @@
       "name": "Desktop Clock",
       "enabled": true,
       "config": {
-        "style": "analog",
-        "transparency": 1,
-        "colorMode": "secondary",
+        "style": "expressive",
+        "transparency": 0,
+        "colorMode": "primary",
         "customColor": "#ffffff",
         "showDate": true,
         "showAnalogNumbers": false,
         "showAnalogSeconds": true,
         "displayPreferences": [
           "all"
-        ]
+        ],
+        "fontFamily": "Distortion Dos Analogue",
+        "twoTone": true,
+        "showDigitalSeconds": false
       },
       "group": "dwg_1789104601766_e4zjnkq2t"
     },
@@ -1149,7 +1152,7 @@
   "frameBarSize": 35,
   "frameLauncherArcExtender": true,
   "frameBarInsetPadding": 6,
-  "configVersion": 41,
+  "configVersion": 42,
   "frameMode": "connected",
   "frameShowOnOverview": false,
   "frameCloseGaps": true,
