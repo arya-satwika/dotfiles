@@ -236,10 +236,10 @@
   "blurBorderColor": "surfaceText",
   "blurBorderOpacity": 0.93,
   "wallpaperBackgroundColorMode": "surface",
-  "fontFamily": "Poppins",
+  "fontFamily": "Google Sans",
   "monoFontFamily": "JetBrains Mono",
-  "displayFontFamily": "Base Neue Sup Exp ExtBd",
-  "fontScale": 0.99,
+  "displayFontFamily": "GLD Display",
+  "fontScale": 1,
   "textRenderType": 1,
   "textRenderQuality": 4,
   "lockScreenShowPowerActions": true,
@@ -1170,5 +1170,5 @@
   "frameMode": "connected",
   "frameShowOnOverview": false,
   "frameCloseGaps": true,
-  "fontWeight": 600
+  "fontWeight": 400
 }
