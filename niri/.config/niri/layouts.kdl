@@ -65,8 +65,8 @@ layer-rule {
 
 // Open DMS windows as floating by default
 window-rule {
-    match app-id=r#"com.danklinux.dms$"#
-    match app-id=r#"com.danklinux.dankcalendar$"#
+    match app-id=r#"dev.duxlabs.shell$"#
+    match app-id=r#"dev.duxlabs.dankcalendar$"#
     open-floating true
     background-effect{
         xray false
