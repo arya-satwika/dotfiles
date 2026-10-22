@@ -51,6 +51,7 @@ window-rule {
 
 window-rule {
     match app-id="org.kde.dolphin"
+    match app-id="dev.duxlabs.files"
     default-window-height { proportion 0.8; }
     default-column-width { proportion 0.7; }
     // default-floating-position x=32 y=32 relative-to="right"
